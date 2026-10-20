@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>科研与项目 | 陈勇</title>
+<meta name="description" content="陈勇的科研项目与工程作品：信息流可归因台风路径集合预报、热带气旋 Freddy 波动作用分析、风能太阳能资源评估、Mask R-CNN 新粒子生成检测，以及全栈与 AI 工程项目。">
+<link rel="canonical" href="https://CY18270852013.github.io/research.html">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap wrap--wide header-inner">
+    <a class="brand" href="index.html">陈勇<span>Yong Chen</span></a>
+    <nav class="site-nav">
+      <a href="index.html">首页</a>
+      <a href="about.html">自我介绍</a>
+      <a href="research.html" aria-current="page">科研与项目</a>
+      <a href="honors.html">竞赛与荣誉</a>
+      <a href="courses.html">课程体系</a>
+      <a href="csai.html">CS &amp; AI</a>
+      <a href="leetcode.html">算法题解</a>
+      <a href="ideas.html">金点子</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="eyebrow">Research &amp; Projects</p>
+    <h1 class="page-title">科研与项目</h1>
+    <p class="page-lede">
+      研究主线是“用可解释的机器学习做大气科学”：生成式模型负责给出概率，因果推断负责给出理由。
+    </p>
+
+    <h2 class="section">科研项目</h2>
+    <div class="entries">
+
+      <div class="entry" id="infoflow-tc">
+        <div class="when">2026.09 – 至今</div>
+        <div class="body">
+          <p class="title">基于流匹配–扩散模型的信息流可归因台风路径集合预报
+            <span class="role">硕士学位研究 · 导师 梁湘三</span></p>
+          <p class="desc">
+            台风路径预报的价值不只在“最可能的那一条”，而在“一组都有可能的路径”以及这些可能性的来源。
+            本课题把生成式模型（流匹配 / 扩散）与 Liang–Kleeman 信息流结合：前者负责从历史再分析资料中
+            学习台风路径的条件概率分布，后者负责把集合离散度归因到具体的物理过程，使集合预报同时具备
+            <em>可靠性</em>与<em>可解释性</em>。
+          </p>
+          <ul class="points">
+            <li>对比生成式集合与物理扰动式集合在台风路径上的技巧与可靠性，考察能否取长补短。</li>
+            <li>训练分布的尾部建模：让极端转向、快速增强这类小概率路径被正确表达，而非只复现气候平均。</li>
+            <li>把初始条件扰动、模式结构误差与边界强迫三类不确定性来源在 AI 集合中解耦并量化。</li>
+            <li>用信息流给出“预报不确定性来自哪里”的定量归因，服务于预报员的实际决策。</li>
+          </ul>
+          <ul class="tags">
+            <li>流匹配 / 扩散模型</li><li>概率集合预报</li><li>信息流因果归因</li>
+            <li>ERA5 · IBTrACS</li><li>PyTorch</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="freddy">
+        <div class="when">2023.12 – 2026.06</div>
+        <div class="body">
+          <p class="title">热带气旋 “Freddy”（2023）生成过程中的热带波动作用分析
+            <span class="role">本科毕业论文 · 主持 · 指导 刘岩</span></p>
+          <p class="desc">
+            热带气旋 Freddy 是南半球观测史上生命史最长的热带气旋之一（约 35 天），并经历了多次登陆与强度变化。
+            论文把 Freddy 的演变按阶段分解，研究 MJO 及 Kelvin、MRG、ER 等赤道波动在两个阶段中对其
+            <em>路径引导</em>与<em>强度维持</em>的作用，并量化波动的动力与热力贡献，以揭示其极端长生命史的主导机制。
+          </p>
+          <ul class="points">
+            <li>波动滤波与多尺度分解：从再分析资料中分离 MJO / Kelvin / MRG / ER 信号。</li>
+            <li>涡度拉伸与垂直积分水汽输送（VIMD）诊断，量化波动对流与涡旋的相互作用。</li>
+            <li>对比两阶段中波流相互作用差异，给出长生命史成因的阶段性解释。</li>
+          </ul>
+          <ul class="tags">
+            <li>热带气旋生成</li><li>赤道波动</li><li>多尺度动力分析</li><li>NCL · Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="masknpf">
+        <div class="when">2025.05 – 2025.12</div>
+        <div class="body">
+          <p class="title">利用机器学习预测大气新粒子生成
+            <span class="role">核心成员 · 中芬科考项目 · 指导 齐西萌</span></p>
+          <p class="desc">
+            大气新粒子生成（New Particle Formation, NPF）事件的识别长期依赖人工判读。
+            本项目基于 Mask R-CNN 对 NPF 事件做自动检测与分类，自动计算生长率与起止时间，
+            并统计不同类型事件在不同季节的分布特征。2025 年 8 月赴赫尔辛基参加科考与科研训练，
+            向 Markku Kulmala 院士汇报成果。
+          </p>
+          <ul class="points">
+            <li>复现并改进基于 Mask R-CNN 的 NPF 事件检测流程，输出 PSD 可视化与掩膜结果。</li>
+            <li>自动计算 3–10 nm、10–25 nm、3–25 nm 三个粒径段的生长率，并判定事件起止时间。</li>
+            <li>分析不同类型 NPF 事件的季节分布规律。</li>
+          </ul>
+          <ul class="tags">
+            <li>Mask R-CNN</li><li>实例分割</li><li>大气化学</li><li>PyTorch</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="renewable">
+        <div class="when">2023.11 – 2024.12</div>
+        <div class="body">
+          <p class="title">中国风能太阳能资源评估及其未来变化趋势
+            <span class="role">主持人 · 省级大学生创新训练项目 · 指导 邱博</span></p>
+          <p class="desc">
+            面向“双碳”目标下的新能源规划需求，融合地面观测、ERA5 再分析气象数据与 CMIP6 多模式模拟结果，
+            系统评估中国风速与地表短波辐射的时空变化特征，并预估风能、太阳能资源的空间分布与未来变化趋势。
+          </p>
+          <ul class="points">
+            <li>构建中国区域风速与地表短波辐射的评估数据集，分析其历史时空变化特征。</li>
+            <li>基于 CMIP6 多模式集合预估未来风能、太阳能资源的分布与趋势，并讨论预估的局限性与改进方向。</li>
+            <li>延伸议题：空气污染对光伏发电潜力的影响。</li>
+          </ul>
+          <ul class="tags">
+            <li>CMIP6</li><li>ERA5</li><li>风能 / 太阳能</li><li>气候预估</li><li>Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="air-pollution">
+        <div class="when">2025.09 – 2026.01</div>
+        <div class="body">
+          <p class="title">机器学习在空气污染预报中的应用
+            <span class="role">课程小组项目 · 选题与展示</span></p>
+          <p class="desc">
+            在“污染气象学”课程中围绕机器学习在空气污染预报中的应用做专题调研与选题设计，
+            梳理深度学习在区域大气化学、臭氧与颗粒物预报中的方法脉络与数据同化思路，
+            并组织小组分工与成果展示。
+          </p>
+          <ul class="tags">
+            <li>大气化学</li><li>深度学习</li><li>文献调研</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="section" id="projects">工程与全栈项目</h2>
+    <div class="entries">
+
+      <div class="entry" id="workorder">
+        <div class="when">2026.06 – 2026.08</div>
+        <div class="body">
+          <p class="title">智能工单处置分析平台 <span class="role">南京知朴星科技有限公司 · 全栈工程师</span></p>
+          <p class="desc">
+            面向街道 12345 政务热线的工单数据治理与智能分析平台，覆盖工单导入治理、智能检索、多维分析、
+            风险预警四大模块；采用全开源技术栈以适配基层有限算力，解决历史工单检索不准、统计繁琐、
+            缺乏风险预警等痛点。
+          </p>
+          <ul class="points">
+            <li>基于 AgentScope 构建 ReAct 多智能体问答系统，注解式注册 30+ 工具，复杂多轮查询推理轮次由 8+ 降至 2–3。</li>
+            <li>设计多 Provider 模型接入层，统一 DeepSeek 云端 API 与本地 Ollama（Qwen 量化部署），支持密钥热更新与健康检查。</li>
+            <li>自研轻量 RAG 语义检索：结构化过滤缩候选集 → 余弦相似度 Top-K 召回，解决“答非所问、计数错误”。</li>
+            <li>性能优化：Fast-Path 意图识别并行预取、SSE 流式输出与心跳、Redis 多级缓存，token 消耗降低约 60%。</li>
+          </ul>
+          <ul class="tags">
+            <li>Spring Boot</li><li>Vue 3</li><li>AgentScope</li><li>DeepSeek</li><li>RAG</li><li>Redis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="rag">
+        <div class="when">个人项目</div>
+        <div class="body">
+          <p class="title">RAG 知识库问答系统 <span class="role">全栈开发 · 已部署上线</span></p>
+          <p class="desc">
+            从零构建的企业级多租户 RAG 知识库问答平台，覆盖“文档解析 → 分块 → 向量化 → 检索 → 生成 → 溯源”
+            完整链路，支持多格式文档接入、6 种检索策略与多家大模型动态切换。
+          </p>
+          <ul class="points">
+            <li>基于 LangChain LCEL 构建检索-生成 Pipeline，内置标准 / 多路召回 / 问题分解 / 摘要 / 假设性问题 / 混合检索 6 种策略。</li>
+            <li>融合 BM25 关键词检索与 FAISS 向量检索，采用加权倒数排名融合（RRF）+ 重排序模型，兼顾召回与精度。</li>
+            <li>自研三层语义分块器（章节标题识别 + 段落合并 + 句子级回退），支持父子检索。</li>
+            <li>Docker Compose 编排 MySQL、Redis、Flask、Celery Worker、Vue 五服务一键部署。</li>
+          </ul>
+          <ul class="tags">
+            <li>Python · Flask</li><li>LangChain</li><li>FAISS · BM25</li><li>Celery</li><li>Docker</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="corpus">
+        <div class="when">2026.02 – 至今</div>
+        <div class="body">
+          <p class="title">“知道 Corpus” 微信小程序 <span class="role">开发中</span></p>
+          <p class="desc">
+            面向知识语料整理与检索的小程序，前端使用微信小程序原生框架，后端提供检索与内容管理接口，
+            并配套 Logo 与视觉方案设计。
+          </p>
+          <ul class="tags">
+            <li>微信小程序</li><li>WXML / WXSS</li><li>接口设计</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry" id="anniv">
+        <div class="when">2026.10</div>
+        <div class="body">
+          <p class="title">纪念日网站 <span class="role">个人全栈项目 · 零构建 · 已部署</span></p>
+          <p class="desc">
+            一个轻量的私人纪念日站点：原生 HTML/CSS/JS 前端，Node（Express + Multer）后端，
+            以 JSON 作为数据层，零构建、零原生依赖，可在老版本 Node 环境下稳定运行；
+            通过内网穿透对外提供服务，并配置开机自启与看门狗脚本。
+          </p>
+          <ul class="tags">
+            <li>原生前端</li><li>Node.js</li><li>JSON 数据层</li><li>Cloudflare Tunnel</li><li>部署运维</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="rule">
+    <p class="link-quiet">
+      相关代码与笔记见 <a href="https://github.com/CY18270852013">GitHub</a>；
+      学习路径见 <a href="csai.html">CS &amp; AI</a>。
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>陈勇 · 复旦大学大气与海洋科学系</p>
+    <p>
+      <a href="mailto:3336076006@qq.com">3336076006@qq.com</a> ·
+      <a href="https://github.com/CY18270852013">github.com/CY18270852013</a> ·
+      <a href="https://CY18270852013.github.io/">CY18270852013.github.io</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

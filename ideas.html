@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>金点子 | 陈勇</title>
+<meta name="description" content="陈勇的问题与构想笔记：拔尖计划“提问与猜想”活动成果，以及 AI + 大气科学方向的若干研究设想。">
+<link rel="canonical" href="https://CY18270852013.github.io/ideas.html">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap wrap--wide header-inner">
+    <a class="brand" href="index.html">陈勇<span>Yong Chen</span></a>
+    <nav class="site-nav">
+      <a href="index.html">首页</a>
+      <a href="about.html">自我介绍</a>
+      <a href="research.html">科研与项目</a>
+      <a href="honors.html">竞赛与荣誉</a>
+      <a href="courses.html">课程体系</a>
+      <a href="csai.html">CS &amp; AI</a>
+      <a href="leetcode.html">算法题解</a>
+      <a href="ideas.html" aria-current="page">金点子</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="eyebrow">Questions &amp; Conjectures</p>
+    <h1 class="page-title">金点子</h1>
+    <p class="page-lede">
+      一个问题的价值常常大于一个答案。这里放我记下来的问题、猜想与研究设想——
+      多数还不成熟，但都是认真想过的。
+    </p>
+
+    <h2 class="section">提问与猜想 · 第三届拔尖计划 2.0</h2>
+    <div class="entries">
+      <div class="entry">
+        <div class="when">2024</div>
+        <div class="body">
+          <p class="title">基于盘古气象大模型分析人工智能在未来新能源气象预测领域的应用</p>
+          <p class="desc">
+            从“盘古气象大模型”发布切入，梳理人工智能在气象领域的发展脉络与关键技术组成，
+            讨论 AI 天气预报相对传统数值方法的优劣，并进一步追问：<em>当预报精度与速度都大幅提升之后，
+            新能源（风能、太阳能）气象预测会因此发生什么变化？</em>
+          </p>
+          <ul class="points">
+            <li>技术脉络：从数值天气预报到数据驱动大模型的关键节点与代表工作。</li>
+            <li>对比分析：盘古在精度与推理速度上的表现，及其对业务预报流程的潜在影响。</li>
+            <li>延伸应用：AI 预报在新能源功率预测、资源评估与调度中的可能切入点。</li>
+            <li>形式：调研报告 + 模拟学术会议汇报 + 学术海报展示。</li>
+          </ul>
+          <ul class="tags">
+            <li>气象大模型</li><li>新能源气象</li><li>文献调研</li><li>学术海报</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section">研究设想 · AI + 大气科学</h2>
+    <p class="note">
+      以下是我在进入硕士阶段前做的一轮选题研判。格局是：中期预报的“第一幕”已由大厂与业务中心走完，
+      真正留给学术界的是<em>可靠性、可解释性与极端事件</em>这些尚未解决的问题。五个方向按“硕士可完成、
+      方法可迁移、论文出口双通道”的标准筛选，均为公开数据、单机多卡可覆盖的设定。
+    </p>
+
+    <table class="catalog">
+      <thead>
+        <tr><th>方向</th><th>一句话</th><th>核心问题</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">生成式集合预报与不确定性量化</td>
+          <td>用扩散 / 流匹配模型给出“一组都有可能的路径”，并说清不确定性来自哪里。</td>
+          <td>集合分布的尾部表达、可靠性校准、三类不确定性来源的解耦。</td>
+        </tr>
+        <tr>
+          <td class="name">AI 数据同化</td>
+          <td>AI 预报已快上万倍，但“起跑线”（初始场）仍靠传统同化；如何端到端从观测生成初值。</td>
+          <td>隐空间同化的压缩伪影、高频观测的吸纳、动力平衡的保持。</td>
+        </tr>
+        <tr>
+          <td class="name">抗平滑的极端事件预报</td>
+          <td>MSE 训练天生抹平暴雨峰值；用极值损失 + 物理约束 + 生成式架构专攻极端降水与对流初生。</td>
+          <td>平均值技巧与尾部强度的兼顾、物理约束修复非物理输出、非平稳背景下的外推。</td>
+        </tr>
+        <tr>
+          <td class="name">物理引导的次季节—季节预测</td>
+          <td>2–6 周预报的技巧来源从初始条件切换为边界强迫（海温、土壤湿度、MJO）。</td>
+          <td>慢变信号如何作为归纳偏置注入网络、从 MSE 转向 CRPS 类概率训练。</td>
+        </tr>
+        <tr>
+          <td class="name">神经网络参数化的在线耦合</td>
+          <td>云与对流参数化是气候模式最大的误差源；让“AI 物理方案”敢于被耦合进长期气候模拟。</td>
+          <td>离线技巧高而在线不稳定、对流随机性的表达、暖气候下的分布外外推。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="link-quiet">
+      我在硕士阶段选择的是第一个方向的收敛版本：以台风路径为试验场，
+      把生成式集合预报与信息流因果归因结合。<a href="research.html#infoflow-tc">见科研页</a>。
+    </p>
+
+    <h2 class="section">还在想的问题</h2>
+    <ul class="plain">
+      <li>生成式模型给出的“可能性”与物理扰动给出的“可能性”，描述的是同一种不确定性吗？</li>
+      <li>一个 AI 预报模型说“路径可能偏北”，我们能否把它翻译成某个具体的物理过程（例如副高西伸）？</li>
+      <li>当训练集里的极端事件本身就很少时，模型凭什么相信自己在极端上是对的？</li>
+      <li>如果把预报技巧提升的收益换算成防灾减灾的时间与成本，我们该优先优化哪个指标？</li>
+    </ul>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>陈勇 · 复旦大学大气与海洋科学系</p>
+    <p>
+      <a href="mailto:3336076006@qq.com">3336076006@qq.com</a> ·
+      <a href="https://github.com/CY18270852013">github.com/CY18270852013</a> ·
+      <a href="https://CY18270852013.github.io/">CY18270852013.github.io</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

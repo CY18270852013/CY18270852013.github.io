@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CS &amp; AI 学习 | 陈勇</title>
+<meta name="description" content="陈勇自学计算机与人工智能的学习地图：编程语言与工程基础、数据与机器学习、大模型与智能体、公开课与教材、大气科学数据处理代码实践。">
+<link rel="canonical" href="https://CY18270852013.github.io/csai.html">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap wrap--wide header-inner">
+    <a class="brand" href="index.html">陈勇<span>Yong Chen</span></a>
+    <nav class="site-nav">
+      <a href="index.html">首页</a>
+      <a href="about.html">自我介绍</a>
+      <a href="research.html">科研与项目</a>
+      <a href="honors.html">竞赛与荣誉</a>
+      <a href="courses.html">课程体系</a>
+      <a href="csai.html" aria-current="page">CS &amp; AI</a>
+      <a href="leetcode.html">算法题解</a>
+      <a href="ideas.html">金点子</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="eyebrow">Computer Science &amp; AI</p>
+    <h1 class="page-title">CS &amp; AI 学习</h1>
+    <p class="page-lede">
+      2025 年初起，我在专业课之外系统自学计算机与人工智能。这一页记录我走过的路径、用过的材料，
+      以及把 Python 用在真实大气科学数据上的实践。
+    </p>
+
+    <h2 class="section">学习路径</h2>
+    <p>
+      自学从“能写对程序”开始，先补算法与系统基础（数据结构、算法、计算机组成、操作系统），
+      再学如何把数据变成结论（数据处理、统计分析、机器学习），最后进入深度学习与大模型应用。
+      全程以“写出来、跑起来、部署上去”为标准，而不是看完视频就算学完。
+    </p>
+
+    <h2 class="section">编程语言与工程基础</h2>
+    <div class="entries">
+      <div class="entry">
+        <div class="when">Java 全栈</div>
+        <div class="body">
+          <p class="desc">
+            Java 语法与面向对象 → JavaWeb → Spring / MyBatis-Plus / Spring Cloud 微服务，
+            并以《苍穹外卖》《天机学堂》两个企业级项目实战贯穿；
+            后延伸至 Spring AI + DeepSeek 的大模型应用开发。
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Python 后端</div>
+        <div class="body">
+          <p class="desc">Python 进阶与工程化、FastAPI 从入门到实战、Flask、Celery 异步任务与 RESTful API 设计。</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">数据库与中间件</div>
+        <div class="body">
+          <p class="desc">MySQL（基础 / 进阶 / 运维）、Redis 缓存与数据结构、Kafka 消息队列、MongoDB。</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">前端</div>
+        <div class="body">
+          <p class="desc">HTML5 / CSS / JavaScript 基础，Vue 3 与 React 组件化开发，TypeScript，微信小程序开发。</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">工程化与工具</div>
+        <div class="body">
+          <p class="desc">Linux、Git、Docker、设计模式、正则表达式、HTTP / TCP-IP、Playwright 自动化测试。</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section">数据、机器学习与深度学习</h2>
+    <table class="catalog">
+      <thead><tr><th>模块</th><th>主要内容</th></tr></thead>
+      <tbody>
+        <tr><td class="name">数据处理与统计分析</td><td>NumPy、Pandas、Matplotlib；数据的读取、清洗、聚合与可视化。</td></tr>
+        <tr><td class="name">机器学习</td><td>回归、分类、聚类与模型评估；scikit-learn 实践，结合吴恩达 CS229 课程。</td></tr>
+        <tr><td class="name">深度学习与神经网络</td><td>PyTorch 基础、CNN / RNN / Transformer 结构、训练与调参；结合 CS231n 课程。</td></tr>
+        <tr><td class="name">自然语言处理</td><td>文本表示、词向量、注意力机制与预训练语言模型；Transformers 快速入门。</td></tr>
+        <tr><td class="name">计算机视觉</td><td>图像分类、目标检测与实例分割；结合本科《计算机视觉》课程与 Mask R-CNN 项目。</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="section">大模型与智能体</h2>
+    <div class="entries">
+      <div class="entry">
+        <div class="when">大模型开发</div>
+        <div class="body">
+          <p class="desc">零基础入门 AI 大模型开发；Prompt Engineering；模型 API 调用与本地部署（Ollama / 量化模型）。</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">RAG 与 Agent</div>
+        <div class="body">
+          <p class="desc">
+            检索增强生成（RAG）全链路：文档解析、语义分块、向量检索（FAISS）与关键词检索（BM25）融合、重排序与溯源；
+            基于 LangChain 与 AgentScope 构建工具调用型智能体（ReAct、多工具注册）。
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">AI 辅助开发</div>
+        <div class="body">
+          <p class="desc">Vibe Coding 项目开发流程；用 AI 辅助编写、调试与重构代码，并沉淀为可复用的工作流。</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section">公开课与教材</h2>
+    <p class="note">
+      以下为自学过程中使用的主要材料，均为公开可获取的课程与参考资料，此处仅作目录记录。
+    </p>
+    <h3>公开课</h3>
+    <ul class="plain">
+      <li>CS61A：Structure and Interpretation of Computer Programs（UC Berkeley）</li>
+      <li>MIT 6.006：Introduction to Algorithms</li>
+      <li>CS229：Machine Learning（Stanford）</li>
+      <li>CS231n：Deep Learning for Computer Vision（Stanford）</li>
+    </ul>
+    <h3>参考资料</h3>
+    <div class="grid-2">
+      <div>
+        <ul class="plain">
+          <li>《菜鸟教程》系列：Python 3、Java、C 语言数据结构与算法、HTML、JavaScript、Vue 3、React、Git、设计模式、正则表达式</li>
+          <li>PyTorch 教程、Deep Learning with PyTorch、60 分钟快速入门 PyTorch</li>
+          <li>Transformers 快速入门、LangChain 教程、AI Agent（智能体）教程</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="plain">
+          <li>《Kafka 权威指南》《深入理解 Kafka》</li>
+          <li>计算机组成原理、NLP、OpenCV、Playwright 教程</li>
+          <li>RFC 7946 GeoJSON 格式规范、《信息技术 人工智能 术语》等标准文档</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section">代码实践 · 大气科学数据处理</h2>
+    <p>
+      把 Python 用在具体的科学问题上，是我检验学习成果的方式。以下主题的脚本均在自己的研究中运行使用，
+      涵盖数据读取、滤波、诊断与绘图全过程：
+    </p>
+    <ul class="plain">
+      <li><strong>降水与对流</strong>：GPM 半小时 / 逐日降水的合并、异常计算与 Hovmöller 图、OLR 异常分析。</li>
+      <li><strong>赤道波动诊断</strong>：MJO、Kelvin、MRG、ER 波的滤波，以及涡旋拉伸（vortex stretching）与垂直积分水汽输送（VIMD）计算。</li>
+      <li><strong>台风 Freddy</strong>：路径与强度提取、生成盒区环境场、降水与 850 hPa 风场合成。</li>
+      <li><strong>风能太阳能资源</strong>：年平均风能资源、风速与比湿剖面、SST 及异常场处理。</li>
+      <li><strong>数值天气预报与统计预报作业</strong>：课程作业涉及的资料处理与绘图脚本。</li>
+      <li><strong>谱分析与相干</strong>：调和分析、谱自由度估计、相干谱计算。</li>
+    </ul>
+    <p>
+      <a href="assets/files/csai/atmospheric-python-scripts.zip" download>下载全部脚本（Python / Jupyter，打包 zip）</a>
+      <span class="link-quiet">· 共 155 个文件</span>
+    </p>
+
+    <h2 class="section">工程实战</h2>
+    <p>
+      学习成果最终落在项目上：智能工单处置分析平台、RAG 知识库问答系统、“知道 Corpus” 小程序、
+      纪念日网站等，详见 <a href="research.html#projects">科研与项目</a>；
+      算法练习见 <a href="leetcode.html">算法题解</a>。
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>陈勇 · 复旦大学大气与海洋科学系</p>
+    <p>
+      <a href="mailto:3336076006@qq.com">3336076006@qq.com</a> ·
+      <a href="https://github.com/CY18270852013">github.com/CY18270852013</a> ·
+      <a href="https://CY18270852013.github.io/">CY18270852013.github.io</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
