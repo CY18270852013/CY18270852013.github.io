@@ -125,6 +125,8 @@
 
     function render() {
       var list = filtered();
+      var pages = Math.max(1, Math.ceil(list.length / size));
+      if (page > pages) page = pages;
       rows.forEach(function (r) { r.style.display = "none"; });
       list.slice((page - 1) * size, page * size).forEach(function (r) { r.style.display = ""; });
       renderPager(list.length);
@@ -150,7 +152,7 @@
       var row = document.getElementById(h);
       if (!row) return;
       topic = row.getAttribute("data-topic");
-      page = Math.floor(rows.indexOf(row) / size) + 1;
+      page = 1;
       chips.forEach(function (c) {
         c.setAttribute("aria-pressed", c.getAttribute("data-topic") === topic ? "true" : "false");
       });
