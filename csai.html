@@ -1,190 +1,100 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CS &amp; AI 学习 | 陈勇</title>
-<meta name="description" content="陈勇自学计算机与人工智能的学习地图：编程语言与工程基础、数据与机器学习、大模型与智能体、公开课与教材、大气科学数据处理代码实践。">
+<title>AI 与计算机 | 陈勇 | 陈勇</title>
+<meta name="description" content="陈勇的计算机与人工智能技术栈：算法与系统基础、机器学习与深度学习、大模型与智能体、后端与全栈工程，以及大气科学 Python 代码实践。">
 <link rel="canonical" href="https://CY18270852013.github.io/csai.html">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-title-zh="AI 与计算机 | 陈勇" data-title-en="CS & AI | Yong Chen">
+<div class="shell">
 
-<header class="site-header">
-  <div class="wrap wrap--wide header-inner">
-    <a class="brand" href="index.html">陈勇<span>Yong Chen</span></a>
-    <nav class="site-nav">
-      <a href="index.html">首页</a>
-      <a href="about.html">自我介绍</a>
-      <a href="research.html">科研与项目</a>
-      <a href="honors.html">竞赛与荣誉</a>
-      <a href="courses.html">课程体系</a>
-      <a href="csai.html" aria-current="page">CS &amp; AI</a>
-      <a href="leetcode.html">算法题解</a>
-      <a href="ideas.html">金点子</a>
-    </nav>
+<aside class="sidebar">
+  <a class="side-top" href="index.html">
+    <img class="avatar" src="assets/img/avatar.jpg" alt="陈勇">
+    <div class="side-id">
+      <div class="side-name"><span class="lang-zh">陈勇</span><span class="lang-en">Chen Yong</span></div>
+      <div class="side-role"><span class="lang-zh">复旦大学 · 大气与海洋科学系</span><span class="lang-en">Fudan University · Atmospheric and Oceanic Sciences</span></div>
+      <div class="side-mail">3336076006@qq.com</div>
+    </div>
+  </a>
+  <div class="side-tools">
+    <button class="lang-toggle" type="button" data-lang="zh" aria-pressed="true">中文</button>
+    <span>/</span>
+    <button class="lang-toggle" type="button" data-lang="en" aria-pressed="false">EN</button>
   </div>
-</header>
-
-<main>
-  <div class="wrap">
-
-    <p class="eyebrow">Computer Science &amp; AI</p>
-    <h1 class="page-title">CS &amp; AI 学习</h1>
-    <p class="page-lede">
-      2025 年初起，我在专业课之外系统自学计算机与人工智能。这一页记录我走过的路径、用过的材料，
-      以及把 Python 用在真实大气科学数据上的实践。
-    </p>
-
-    <h2 class="section">学习路径</h2>
-    <p>
-      自学从“能写对程序”开始，先补算法与系统基础（数据结构、算法、计算机组成、操作系统），
-      再学如何把数据变成结论（数据处理、统计分析、机器学习），最后进入深度学习与大模型应用。
-      全程以“写出来、跑起来、部署上去”为标准，而不是看完视频就算学完。
-    </p>
-
-    <h2 class="section">编程语言与工程基础</h2>
-    <div class="entries">
-      <div class="entry">
-        <div class="when">Java 全栈</div>
-        <div class="body">
-          <p class="desc">
-            Java 语法与面向对象 → JavaWeb → Spring / MyBatis-Plus / Spring Cloud 微服务，
-            并以《苍穹外卖》《天机学堂》两个企业级项目实战贯穿；
-            后延伸至 Spring AI + DeepSeek 的大模型应用开发。
-          </p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">Python 后端</div>
-        <div class="body">
-          <p class="desc">Python 进阶与工程化、FastAPI 从入门到实战、Flask、Celery 异步任务与 RESTful API 设计。</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">数据库与中间件</div>
-        <div class="body">
-          <p class="desc">MySQL（基础 / 进阶 / 运维）、Redis 缓存与数据结构、Kafka 消息队列、MongoDB。</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">前端</div>
-        <div class="body">
-          <p class="desc">HTML5 / CSS / JavaScript 基础，Vue 3 与 React 组件化开发，TypeScript，微信小程序开发。</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">工程化与工具</div>
-        <div class="body">
-          <p class="desc">Linux、Git、Docker、设计模式、正则表达式、HTTP / TCP-IP、Playwright 自动化测试。</p>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="section">数据、机器学习与深度学习</h2>
-    <table class="catalog">
-      <thead><tr><th>模块</th><th>主要内容</th></tr></thead>
-      <tbody>
-        <tr><td class="name">数据处理与统计分析</td><td>NumPy、Pandas、Matplotlib；数据的读取、清洗、聚合与可视化。</td></tr>
-        <tr><td class="name">机器学习</td><td>回归、分类、聚类与模型评估；scikit-learn 实践，结合吴恩达 CS229 课程。</td></tr>
-        <tr><td class="name">深度学习与神经网络</td><td>PyTorch 基础、CNN / RNN / Transformer 结构、训练与调参；结合 CS231n 课程。</td></tr>
-        <tr><td class="name">自然语言处理</td><td>文本表示、词向量、注意力机制与预训练语言模型；Transformers 快速入门。</td></tr>
-        <tr><td class="name">计算机视觉</td><td>图像分类、目标检测与实例分割；结合本科《计算机视觉》课程与 Mask R-CNN 项目。</td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="section">大模型与智能体</h2>
-    <div class="entries">
-      <div class="entry">
-        <div class="when">大模型开发</div>
-        <div class="body">
-          <p class="desc">零基础入门 AI 大模型开发；Prompt Engineering；模型 API 调用与本地部署（Ollama / 量化模型）。</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">RAG 与 Agent</div>
-        <div class="body">
-          <p class="desc">
-            检索增强生成（RAG）全链路：文档解析、语义分块、向量检索（FAISS）与关键词检索（BM25）融合、重排序与溯源；
-            基于 LangChain 与 AgentScope 构建工具调用型智能体（ReAct、多工具注册）。
-          </p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">AI 辅助开发</div>
-        <div class="body">
-          <p class="desc">Vibe Coding 项目开发流程；用 AI 辅助编写、调试与重构代码，并沉淀为可复用的工作流。</p>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="section">公开课与教材</h2>
-    <p class="note">
-      以下为自学过程中使用的主要材料，均为公开可获取的课程与参考资料，此处仅作目录记录。
-    </p>
-    <h3>公开课</h3>
-    <ul class="plain">
-      <li>CS61A：Structure and Interpretation of Computer Programs（UC Berkeley）</li>
-      <li>MIT 6.006：Introduction to Algorithms</li>
-      <li>CS229：Machine Learning（Stanford）</li>
-      <li>CS231n：Deep Learning for Computer Vision（Stanford）</li>
-    </ul>
-    <h3>参考资料</h3>
-    <div class="grid-2">
-      <div>
-        <ul class="plain">
-          <li>《菜鸟教程》系列：Python 3、Java、C 语言数据结构与算法、HTML、JavaScript、Vue 3、React、Git、设计模式、正则表达式</li>
-          <li>PyTorch 教程、Deep Learning with PyTorch、60 分钟快速入门 PyTorch</li>
-          <li>Transformers 快速入门、LangChain 教程、AI Agent（智能体）教程</li>
-        </ul>
-      </div>
-      <div>
-        <ul class="plain">
-          <li>《Kafka 权威指南》《深入理解 Kafka》</li>
-          <li>计算机组成原理、NLP、OpenCV、Playwright 教程</li>
-          <li>RFC 7946 GeoJSON 格式规范、《信息技术 人工智能 术语》等标准文档</li>
-        </ul>
-      </div>
-    </div>
-
-    <h2 class="section">代码实践 · 大气科学数据处理</h2>
-    <p>
-      把 Python 用在具体的科学问题上，是我检验学习成果的方式。以下主题的脚本均在自己的研究中运行使用，
-      涵盖数据读取、滤波、诊断与绘图全过程：
-    </p>
-    <ul class="plain">
-      <li><strong>降水与对流</strong>：GPM 半小时 / 逐日降水的合并、异常计算与 Hovmöller 图、OLR 异常分析。</li>
-      <li><strong>赤道波动诊断</strong>：MJO、Kelvin、MRG、ER 波的滤波，以及涡旋拉伸（vortex stretching）与垂直积分水汽输送（VIMD）计算。</li>
-      <li><strong>台风 Freddy</strong>：路径与强度提取、生成盒区环境场、降水与 850 hPa 风场合成。</li>
-      <li><strong>风能太阳能资源</strong>：年平均风能资源、风速与比湿剖面、SST 及异常场处理。</li>
-      <li><strong>数值天气预报与统计预报作业</strong>：课程作业涉及的资料处理与绘图脚本。</li>
-      <li><strong>谱分析与相干</strong>：调和分析、谱自由度估计、相干谱计算。</li>
-    </ul>
-    <p>
-      <a href="assets/files/csai/atmospheric-python-scripts.zip" download>下载全部脚本（Python / Jupyter，打包 zip）</a>
-      <span class="link-quiet">· 共 155 个文件</span>
-    </p>
-
-    <h2 class="section">工程实战</h2>
-    <p>
-      学习成果最终落在项目上：智能工单处置分析平台、RAG 知识库问答系统、“知道 Corpus” 小程序、
-      纪念日网站等，详见 <a href="research.html#projects">科研与项目</a>；
-      算法练习见 <a href="leetcode.html">算法题解</a>。
-    </p>
-
+  <nav class="sidenav"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><a href="about.html"><span class="lang-zh">自我介绍</span><span class="lang-en">About</span></a><a href="research.html"><span class="lang-zh">科研与项目</span><span class="lang-en">Research</span></a><a href="honors.html"><span class="lang-zh">荣誉与竞赛</span><span class="lang-en">Honors</span></a><a href="courses.html"><span class="lang-zh">课程体系</span><span class="lang-en">Courses</span></a><a href="csai.html" aria-current="page"><span class="lang-zh">AI 与计算机</span><span class="lang-en">CS & AI</span></a><a href="leetcode.html"><span class="lang-zh">算法题解</span><span class="lang-en">Algorithms</span></a><a href="directory.html"><span class="lang-zh">目录</span><span class="lang-en">Directory</span></a><a href="archive.html"><span class="lang-zh">归档</span><span class="lang-en">Archive</span></a></nav>
+  <div class="side-foot">
+    <a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="mailto:3336076006@qq.com">Email</a>
+    <br><span class="lang-zh">南京 · 上海</span><span class="lang-en">Nanjing · Shanghai</span>
+  </div>
+</aside>
+<main class="main">
+  <div class="content">
+<nav class="crumb"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><span class="sep">/</span><span class="here"><span class="lang-zh">AI 与计算机</span><span class="lang-en">CS & AI</span></span></nav>
+<h1><span class="lang-zh">AI 与计算机</span><span class="lang-en">CS & AI</span></h1>
+<p class="lede"><span class="lang-zh">除了大气科学的专业课程，我按计算机专业的主干路径完成了系统训练：算法与系统基础、机器学习与深度学习、大模型与智能体、后端与全栈工程。每一项都以能写出、能跑通、能部署为标准。</span><span class="lang-en">Alongside atmospheric science, I completed the core path of a computer-science curriculum: algorithms and systems, machine learning and deep learning, LLMs and agents, back-end and full-stack engineering.</span></p>
+<p class="lede"><span class="lang-zh">这一页记录课程、教材、技术模块与代码实践。</span><span class="lang-en">This page records courses, materials, technical modules and code practice.</span></p>
+<h2><span class="lang-zh">学习路径</span><span class="lang-en">Path</span></h2>
+<div class="entries"><div class="entry"><div class="when">01</div><div class="body"><h3><span class="lang-zh">编程与算法基础</span><span class="lang-en">Programming and Algorithms</span></h3><p><span class="lang-zh">C / Python / Java 三门语言，数据结构与算法，CS61A、MIT 6.006 与伯克利数据结构课程；以手写实现与复杂度分析为标准。</span><span class="lang-en">C, Python and Java; data structures and algorithms through CS61A, MIT 6.006 and the Berkeley data-structures course.</span></p></div></div><div class="entry"><div class="when">02</div><div class="body"><h3><span class="lang-zh">系统与工程基础</span><span class="lang-en">Systems and Engineering</span></h3><p><span class="lang-zh">计算机组成、操作系统、计算机网络、数据库；Java 全栈（Spring / MyBatis-Plus / Spring Cloud）与 Python 后端（FastAPI / Flask / Celery）。</span><span class="lang-en">Computer organisation, operating systems, networks and databases; Java full-stack (Spring, MyBatis-Plus, Spring Cloud) and Python back ends (FastAPI, Flask, Celery).</span></p></div></div><div class="entry"><div class="when">03</div><div class="body"><h3><span class="lang-zh">机器学习与深度学习</span><span class="lang-en">Machine Learning and Deep Learning</span></h3><p><span class="lang-zh">CS229 与 CS231n；PyTorch 训练与调参，CNN / RNN / Transformer，扩散与流匹配等生成模型，目标检测与实例分割。</span><span class="lang-en">CS229 and CS231n; PyTorch training and tuning, CNNs, RNNs and Transformers, diffusion and flow-matching models, detection and segmentation.</span></p></div></div><div class="entry"><div class="when">04</div><div class="body"><h3><span class="lang-zh">大模型与智能体</span><span class="lang-en">LLMs and Agents</span></h3><p><span class="lang-zh">大模型应用开发、Prompt Engineering、模型 API 与本地量化部署（Ollama）；LangChain 与 AgentScope 的工具调用型智能体、多智能体协作与检索增强生成。</span><span class="lang-en">LLM application development, prompt engineering, model APIs and local quantised deployment with Ollama; tool-calling and multi-agent systems with LangChain and AgentScope.</span></p></div></div></div>
+<h2><span class="lang-zh">公开课</span><span class="lang-en">Open Courses</span></h2><div class="tablewrap"><table class="catalog">
+<thead><tr><th><span class="lang-zh">课程</span><span class="lang-en">Course</span></th><th><span class="lang-zh">内容</span><span class="lang-en">Content</span></th></tr></thead>
+<tbody>
+<tr><td class="name">CS61A</td><td><span class="lang-zh">Structure and Interpretation of Computer Programs（UC Berkeley）</span><span class="lang-en">Structure and Interpretation of Computer Programs (UC Berkeley)</span></td></tr>
+<tr><td class="name">MIT 6.006</td><td><span class="lang-zh">Introduction to Algorithms（MIT）</span><span class="lang-en">Introduction to Algorithms (MIT)</span></td></tr>
+<tr><td class="name">CS229</td><td><span class="lang-zh">Machine Learning（Stanford）</span><span class="lang-en">Machine Learning (Stanford)</span></td></tr>
+<tr><td class="name">CS231n</td><td><span class="lang-zh">Deep Learning for Computer Vision（Stanford）</span><span class="lang-en">Deep Learning for Computer Vision (Stanford)</span></td></tr>
+</tbody></table></div>
+<p class="note" style="margin-top:10px"><span class="lang-zh">教材与参考资料包括 PyTorch 官方教程、Transformers 文档、LangChain 文档、Kafka 相关专著与 RFC 7946 等标准文档。</span><span class="lang-en">Additional materials include the PyTorch tutorials, Transformers and LangChain documentation, Kafka references and standards such as RFC 7946.</span></p>
+<h2><span class="lang-zh">机器学习与深度学习</span><span class="lang-en">Machine Learning & Deep Learning</span></h2><div class="tablewrap"><table class="catalog">
+<thead><tr><th><span class="lang-zh">模块</span><span class="lang-en">Module</span></th><th><span class="lang-zh">主要内容</span><span class="lang-en">Topics</span></th></tr></thead>
+<tbody>
+<tr><td class="name"><span class="lang-zh">数据处理</span><span class="lang-en">Data processing</span></td><td><span class="lang-zh">NumPy、Pandas、Matplotlib；读取、清洗、聚合与可视化。</span><span class="lang-en">NumPy, Pandas and Matplotlib for loading, cleaning, aggregation and visualisation.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">机器学习</span><span class="lang-en">Machine learning</span></td><td><span class="lang-zh">回归、分类、聚类与模型评估；scikit-learn 实践。</span><span class="lang-en">Regression, classification, clustering and model evaluation with scikit-learn.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">深度学习</span><span class="lang-en">Deep learning</span></td><td><span class="lang-zh">PyTorch 训练流程、CNN / RNN / Transformer、归一化与正则化、调参。</span><span class="lang-en">PyTorch training loops, CNNs, RNNs and Transformers, normalisation, regularisation and tuning.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">生成模型</span><span class="lang-en">Generative models</span></td><td><span class="lang-zh">扩散模型、流匹配、条件生成与采样。</span><span class="lang-en">Diffusion models, flow matching, conditional generation and sampling.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">计算机视觉</span><span class="lang-en">Computer vision</span></td><td><span class="lang-zh">图像分类、目标检测与实例分割；Mask R-CNN 项目实践。</span><span class="lang-en">Image classification, object detection and instance segmentation with Mask R-CNN.</span></td></tr>
+</tbody></table></div>
+<h2><span class="lang-zh">大模型与智能体</span><span class="lang-en">LLMs & Agents</span></h2>
+<div class="entries"><div class="entry"><div class="when">LLM</div><div class="body"><p class="title"><span class="lang-zh">模型接入与调用</span><span class="lang-en">Model access</span></p><p><span class="lang-zh">OpenAI 兼容接口、DeepSeek API、Ollama 本地量化部署；流式输出、重试与降级、成本与延迟控制。</span><span class="lang-en">OpenAI-compatible APIs, DeepSeek and local quantised Ollama deployment; streaming, retries, fallbacks and cost/latency control.</span></p></div></div><div class="entry"><div class="when">RAG</div><div class="body"><p class="title"><span class="lang-zh">检索增强生成</span><span class="lang-en">Retrieval-augmented generation</span></p><p><span class="lang-zh">文档解析、语义分块、向量检索（FAISS）与关键词检索（BM25）、倒数排名融合、重排序与引用溯源。</span><span class="lang-en">Document parsing, semantic chunking, FAISS and BM25 retrieval, reciprocal rank fusion, reranking and citation.</span></p></div></div><div class="entry"><div class="when">Agent</div><div class="body"><p class="title"><span class="lang-zh">工具调用与多智能体</span><span class="lang-en">Tool calling and multi-agent systems</span></p><p><span class="lang-zh">ReAct 循环、工具注册与参数校验、任务分解、多智能体协作与评测。</span><span class="lang-en">ReAct loops, tool registration and validation, task decomposition, multi-agent collaboration and evaluation.</span></p></div></div><div class="entry"><div class="when">Serving</div><div class="body"><p class="title"><span class="lang-zh">推理服务与部署</span><span class="lang-en">Serving and deployment</span></p><p><span class="lang-zh">FastAPI 服务化、Docker 编排、Redis 缓存、SSE 推流、日志与健康检查。</span><span class="lang-en">FastAPI services, Docker orchestration, Redis caching, SSE streaming, logging and health checks.</span></p></div></div></div>
+<h2><span class="lang-zh">工程能力</span><span class="lang-en">Engineering</span></h2><div class="tablewrap"><table class="catalog">
+<thead><tr><th><span class="lang-zh">方向</span><span class="lang-en">Area</span></th><th><span class="lang-zh">内容</span><span class="lang-en">Content</span></th></tr></thead>
+<tbody>
+<tr><td class="name">Java</td><td><span class="lang-zh">Spring / MyBatis-Plus / Spring Cloud，企业级项目实战；Spring AI + DeepSeek。</span><span class="lang-en">Spring, MyBatis-Plus and Spring Cloud; enterprise projects; Spring AI with DeepSeek.</span></td></tr>
+<tr><td class="name">Python</td><td><span class="lang-zh">FastAPI、Flask、Celery 异步任务、RESTful API 设计。</span><span class="lang-en">FastAPI, Flask, Celery and RESTful API design.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">数据库与中间件</span><span class="lang-en">Data stores</span></td><td><span class="lang-zh">MySQL（基础 / 进阶 / 运维）、Redis、Kafka、MongoDB。</span><span class="lang-en">MySQL, Redis, Kafka and MongoDB.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">前端</span><span class="lang-en">Front end</span></td><td><span class="lang-zh">HTML / CSS / JavaScript、Vue 3、React、TypeScript、微信小程序。</span><span class="lang-en">HTML, CSS, JavaScript, Vue 3, React, TypeScript and WeChat mini programs.</span></td></tr>
+<tr><td class="name"><span class="lang-zh">工程化</span><span class="lang-en">Tooling</span></td><td><span class="lang-zh">Linux、Git、Docker、Playwright、HTTP / TCP-IP、设计模式。</span><span class="lang-en">Linux, Git, Docker, Playwright, HTTP/TCP-IP and design patterns.</span></td></tr>
+</tbody></table></div>
+<h2><span class="lang-zh">代码实践</span><span class="lang-en">Code Practice</span></h2>
+<p><span class="lang-zh">把方法用在真实数据上是检验学习的方式。以下脚本均在研究中实际运行，涵盖读取、诊断、建模与绘图。</span><span class="lang-en">Applying methods to real data is how I test what I learn. The scripts below were used in actual research, covering loading, diagnostics, modelling and plotting.</span></p>
+<ul class="plain"><li><span class="lang-zh"><strong>降水与对流</strong>：GPM 半小时与逐日降水的合并、异常计算、Hovmöller 图与 OLR 分析。</span><span class="lang-en"><strong>Precipitation and convection</strong>: merging GPM half-hourly and daily data, anomalies, Hovmöller diagrams and OLR analysis.</span></li><li><span class="lang-zh"><strong>赤道波动诊断</strong>：MJO、Kelvin、MRG、ER 滤波，涡度拉伸与垂直积分水汽输送。</span><span class="lang-en"><strong>Equatorial waves</strong>: MJO, Kelvin, MRG and ER filtering, vortex stretching and moisture-divergence diagnostics.</span></li><li><span class="lang-zh"><strong>台风分析</strong>：路径与强度提取、生成区环境场、降水与 850 hPa 风场合成。</span><span class="lang-en"><strong>Cyclone analysis</strong>: track and intensity extraction, genesis-region environments, rainfall and low-level wind composites.</span></li><li><span class="lang-zh"><strong>新能源资源</strong>：年平均风能资源、风速与比湿剖面、SST 及异常场处理。</span><span class="lang-en"><strong>Renewable resources</strong>: annual wind energy, wind and humidity profiles, SST and anomaly processing.</span></li><li><span class="lang-zh"><strong>谱分析</strong>：调和分析、谱自由度估计与相干谱计算。</span><span class="lang-en"><strong>Spectral analysis</strong>: harmonic analysis, spectral degrees of freedom and coherence.</span></li></ul>
+<p class="small-note"><a href="assets/files/csai/atmospheric-python-scripts.zip" download><span class="lang-zh">下载全部脚本（155 个文件，zip）</span><span class="lang-en">Download all scripts (155 files, zip)</span></a> — <span class="lang-zh">Python / Jupyter</span><span class="lang-en">Python / Jupyter</span></p>
+<h2><span class="lang-zh">相关项目</span><span class="lang-en">Related Projects</span></h2><ul class="plain"><li><span class="lang-zh"><a href="research.html#workorder">智能工单处置分析平台</a>：多智能体问答、语义检索与流式服务</span><span class="lang-en">Intelligent work-order platform: multi-agent QA, semantic retrieval and streaming services</span></li><li><span class="lang-zh"><a href="research.html#corpus">“知道 Corpus” 微信小程序</a>：原生前端与检索接口</span><span class="lang-en">“Corpus” WeChat mini program: native front end and retrieval APIs</span></li><li><span class="lang-zh"><a href="leetcode.html">算法题解</a>：40 道题的 C++ 实现与源码</span><span class="lang-en">Algorithm notes: C++ solutions to 40 problems</span></li></ul>
+    <footer class="foot">
+      <p>© 2026 <span class="lang-zh">陈勇 · 复旦大学大气与海洋科学系</span><span class="lang-en">Yong Chen · Fudan University</span></p>
+      <p><a href="mailto:3336076006@qq.com">Email</a><span class="sep">·</span><a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="https://github.com/CY18270852013/CY18270852013.github.io"><span class="lang-zh">本站源码</span><span class="lang-en">Source</span></a></p>
+    </footer>
   </div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>陈勇 · 复旦大学大气与海洋科学系</p>
-    <p>
-      <a href="mailto:3336076006@qq.com">3336076006@qq.com</a> ·
-      <a href="https://github.com/CY18270852013">github.com/CY18270852013</a> ·
-      <a href="https://CY18270852013.github.io/">CY18270852013.github.io</a>
-    </p>
+<aside class="rail">
+  <form class="search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="搜索…" data-ph-zh="搜索…" data-ph-en="Search…" aria-label="站内搜索">
+  </form>
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">最近更新</span><span class="lang-en">Recent</span></div>
+    <ul class="recent"><li><span class="rdate">2026.09</span><a href="research.html#led"><span class="lang-zh">夜间灯光遥感与台风经济损失评估</span><span class="lang-en">Nighttime lights & typhoon loss</span></a></li><li><span class="rdate">2026.08</span><a href="research.html#workorder"><span class="lang-zh">智能工单处置分析平台</span><span class="lang-en">Intelligent work-order platform</span></a></li><li><span class="rdate">2026.06</span><a href="research.html#freddy"><span class="lang-zh">热带气旋 Freddy 的波动作用</span><span class="lang-en">Wave forcing of Cyclone Freddy</span></a></li><li><span class="rdate">2026.02</span><a href="research.html#corpus"><span class="lang-zh">“知道 Corpus” 小程序</span><span class="lang-en">Corpus mini program</span></a></li><li><span class="rdate">2025.12</span><a href="research.html#masknpf"><span class="lang-zh">机器学习识别大气新粒子生成</span><span class="lang-en">NPF detection with Mask R-CNN</span></a></li></ul>
   </div>
-</footer>
-
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></div>
+    <p class="rail-text"><a href="mailto:3336076006@qq.com">3336076006@qq.com</a></p>
+    <p class="rail-text"><a href="https://github.com/CY18270852013">GitHub</a> · <a href="https://leetcode.cn/u/cy20031127/">LeetCode</a></p>
+  </div>
+</aside>
+</div>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

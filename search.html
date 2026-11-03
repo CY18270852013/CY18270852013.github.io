@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>搜索 | 陈勇 | 陈勇</title>
+<meta name="description" content="陈勇个人网站的站内搜索：检索页面、科研项目、课程文档与算法题。">
+<link rel="canonical" href="https://CY18270852013.github.io/search.html">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-title-zh="搜索 | 陈勇" data-title-en="Search | Yong Chen">
+<div class="shell">
+
+<aside class="sidebar">
+  <a class="side-top" href="index.html">
+    <img class="avatar" src="assets/img/avatar.jpg" alt="陈勇">
+    <div class="side-id">
+      <div class="side-name"><span class="lang-zh">陈勇</span><span class="lang-en">Chen Yong</span></div>
+      <div class="side-role"><span class="lang-zh">复旦大学 · 大气与海洋科学系</span><span class="lang-en">Fudan University · Atmospheric and Oceanic Sciences</span></div>
+      <div class="side-mail">3336076006@qq.com</div>
+    </div>
+  </a>
+  <div class="side-tools">
+    <button class="lang-toggle" type="button" data-lang="zh" aria-pressed="true">中文</button>
+    <span>/</span>
+    <button class="lang-toggle" type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+  <nav class="sidenav"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><a href="about.html"><span class="lang-zh">自我介绍</span><span class="lang-en">About</span></a><a href="research.html"><span class="lang-zh">科研与项目</span><span class="lang-en">Research</span></a><a href="honors.html"><span class="lang-zh">荣誉与竞赛</span><span class="lang-en">Honors</span></a><a href="courses.html"><span class="lang-zh">课程体系</span><span class="lang-en">Courses</span></a><a href="csai.html"><span class="lang-zh">AI 与计算机</span><span class="lang-en">CS & AI</span></a><a href="leetcode.html"><span class="lang-zh">算法题解</span><span class="lang-en">Algorithms</span></a><a href="directory.html"><span class="lang-zh">目录</span><span class="lang-en">Directory</span></a><a href="archive.html"><span class="lang-zh">归档</span><span class="lang-en">Archive</span></a></nav>
+  <div class="side-foot">
+    <a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="mailto:3336076006@qq.com">Email</a>
+    <br><span class="lang-zh">南京 · 上海</span><span class="lang-en">Nanjing · Shanghai</span>
+  </div>
+</aside>
+<main class="main">
+  <div class="content">
+<nav class="crumb"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><span class="sep">/</span><span class="here"><span class="lang-zh">搜索</span><span class="lang-en">Search</span></span></nav>
+<h1><span class="lang-zh">搜索</span><span class="lang-en">Search</span></h1>
+<p class="lede"><span class="lang-zh">站内所有页面、研究项目、课程文档与算法题均已被索引，支持中文与英文关键词。</span><span class="lang-en">Every page, research project, course document and algorithm problem is indexed. Chinese and English keywords both work.</span></p>
+<form class="search-big" action="search.html" method="get" role="search">
+<input type="search" name="q" id="q" placeholder="输入关键词，例如“台风”“Transformer”“动态规划”" data-ph-zh="输入关键词，例如“台风”“Transformer”“动态规划”" data-ph-en="Search the site, e.g. “typhoon”, “Transformer”, “DP”" aria-label="搜索">
+<button type="submit"><span class="lang-zh">搜索</span><span class="lang-en">Search</span></button>
+</form>
+<div class="filters" id="searchTypes">
+<button class="chip" type="button" data-type="all" aria-pressed="true"><span class="lang-zh">全部</span><span class="lang-en">All</span></button>
+<button class="chip" type="button" data-type="research" aria-pressed="false"><span class="lang-zh">科研</span><span class="lang-en">Research</span></button>
+<button class="chip" type="button" data-type="engineering" aria-pressed="false"><span class="lang-zh">工程</span><span class="lang-en">Engineering</span></button>
+<button class="chip" type="button" data-type="course" aria-pressed="false"><span class="lang-zh">课程</span><span class="lang-en">Courses</span></button>
+<button class="chip" type="button" data-type="csai" aria-pressed="false"><span class="lang-zh">学习</span><span class="lang-en">Notes</span></button>
+<button class="chip" type="button" data-type="algo" aria-pressed="false"><span class="lang-zh">算法题</span><span class="lang-en">Problems</span></button>
+</div>
+<p class="small-note" id="searchTotal"></p>
+<div id="searchResults"></div>
+<p class="small-note" id="searchStatus"></p>
+    <footer class="foot">
+      <p>© 2026 <span class="lang-zh">陈勇 · 复旦大学大气与海洋科学系</span><span class="lang-en">Yong Chen · Fudan University</span></p>
+      <p><a href="mailto:3336076006@qq.com">Email</a><span class="sep">·</span><a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="https://github.com/CY18270852013/CY18270852013.github.io"><span class="lang-zh">本站源码</span><span class="lang-en">Source</span></a></p>
+    </footer>
+  </div>
+</main>
+
+<aside class="rail">
+  <form class="search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="搜索…" data-ph-zh="搜索…" data-ph-en="Search…" aria-label="站内搜索">
+  </form>
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">最近更新</span><span class="lang-en">Recent</span></div>
+    <ul class="recent"><li><span class="rdate">2026.09</span><a href="research.html#led"><span class="lang-zh">夜间灯光遥感与台风经济损失评估</span><span class="lang-en">Nighttime lights & typhoon loss</span></a></li><li><span class="rdate">2026.08</span><a href="research.html#workorder"><span class="lang-zh">智能工单处置分析平台</span><span class="lang-en">Intelligent work-order platform</span></a></li><li><span class="rdate">2026.06</span><a href="research.html#freddy"><span class="lang-zh">热带气旋 Freddy 的波动作用</span><span class="lang-en">Wave forcing of Cyclone Freddy</span></a></li><li><span class="rdate">2026.02</span><a href="research.html#corpus"><span class="lang-zh">“知道 Corpus” 小程序</span><span class="lang-en">Corpus mini program</span></a></li><li><span class="rdate">2025.12</span><a href="research.html#masknpf"><span class="lang-zh">机器学习识别大气新粒子生成</span><span class="lang-en">NPF detection with Mask R-CNN</span></a></li></ul>
+  </div>
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></div>
+    <p class="rail-text"><a href="mailto:3336076006@qq.com">3336076006@qq.com</a></p>
+    <p class="rail-text"><a href="https://github.com/CY18270852013">GitHub</a> · <a href="https://leetcode.cn/u/cy20031127/">LeetCode</a></p>
+  </div>
+</aside>
+</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

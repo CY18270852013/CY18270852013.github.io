@@ -1,242 +1,70 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>科研与项目 | 陈勇</title>
-<meta name="description" content="陈勇的科研项目与工程作品：信息流可归因台风路径集合预报、热带气旋 Freddy 波动作用分析、风能太阳能资源评估、Mask R-CNN 新粒子生成检测，以及全栈与 AI 工程项目。">
+<title>科研与项目 | 陈勇 | 陈勇</title>
+<meta name="description" content="陈勇的科研与工程项目：夜间灯光遥感与台风经济损失评估、热带气旋 Freddy 波动分析、新粒子生成检测、风能太阳能评估，以及智能工单平台与小程序开发。">
 <link rel="canonical" href="https://CY18270852013.github.io/research.html">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-title-zh="科研与项目 | 陈勇" data-title-en="Research | Yong Chen">
+<div class="shell">
 
-<header class="site-header">
-  <div class="wrap wrap--wide header-inner">
-    <a class="brand" href="index.html">陈勇<span>Yong Chen</span></a>
-    <nav class="site-nav">
-      <a href="index.html">首页</a>
-      <a href="about.html">自我介绍</a>
-      <a href="research.html" aria-current="page">科研与项目</a>
-      <a href="honors.html">竞赛与荣誉</a>
-      <a href="courses.html">课程体系</a>
-      <a href="csai.html">CS &amp; AI</a>
-      <a href="leetcode.html">算法题解</a>
-      <a href="ideas.html">金点子</a>
-    </nav>
+<aside class="sidebar">
+  <a class="side-top" href="index.html">
+    <img class="avatar" src="assets/img/avatar.jpg" alt="陈勇">
+    <div class="side-id">
+      <div class="side-name"><span class="lang-zh">陈勇</span><span class="lang-en">Chen Yong</span></div>
+      <div class="side-role"><span class="lang-zh">复旦大学 · 大气与海洋科学系</span><span class="lang-en">Fudan University · Atmospheric and Oceanic Sciences</span></div>
+      <div class="side-mail">3336076006@qq.com</div>
+    </div>
+  </a>
+  <div class="side-tools">
+    <button class="lang-toggle" type="button" data-lang="zh" aria-pressed="true">中文</button>
+    <span>/</span>
+    <button class="lang-toggle" type="button" data-lang="en" aria-pressed="false">EN</button>
   </div>
-</header>
-
-<main>
-  <div class="wrap">
-
-    <p class="eyebrow">Research &amp; Projects</p>
-    <h1 class="page-title">科研与项目</h1>
-    <p class="page-lede">
-      研究主线是“用可解释的机器学习做大气科学”：生成式模型负责给出概率，因果推断负责给出理由。
-    </p>
-
-    <h2 class="section">科研项目</h2>
-    <div class="entries">
-
-      <div class="entry" id="infoflow-tc">
-        <div class="when">2026.09 – 至今</div>
-        <div class="body">
-          <p class="title">基于流匹配–扩散模型的信息流可归因台风路径集合预报
-            <span class="role">硕士学位研究 · 导师 梁湘三</span></p>
-          <p class="desc">
-            台风路径预报的价值不只在“最可能的那一条”，而在“一组都有可能的路径”以及这些可能性的来源。
-            本课题把生成式模型（流匹配 / 扩散）与 Liang–Kleeman 信息流结合：前者负责从历史再分析资料中
-            学习台风路径的条件概率分布，后者负责把集合离散度归因到具体的物理过程，使集合预报同时具备
-            <em>可靠性</em>与<em>可解释性</em>。
-          </p>
-          <ul class="points">
-            <li>对比生成式集合与物理扰动式集合在台风路径上的技巧与可靠性，考察能否取长补短。</li>
-            <li>训练分布的尾部建模：让极端转向、快速增强这类小概率路径被正确表达，而非只复现气候平均。</li>
-            <li>把初始条件扰动、模式结构误差与边界强迫三类不确定性来源在 AI 集合中解耦并量化。</li>
-            <li>用信息流给出“预报不确定性来自哪里”的定量归因，服务于预报员的实际决策。</li>
-          </ul>
-          <ul class="tags">
-            <li>流匹配 / 扩散模型</li><li>概率集合预报</li><li>信息流因果归因</li>
-            <li>ERA5 · IBTrACS</li><li>PyTorch</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="freddy">
-        <div class="when">2023.12 – 2026.06</div>
-        <div class="body">
-          <p class="title">热带气旋 “Freddy”（2023）生成过程中的热带波动作用分析
-            <span class="role">本科毕业论文 · 主持 · 指导 刘岩</span></p>
-          <p class="desc">
-            热带气旋 Freddy 是南半球观测史上生命史最长的热带气旋之一（约 35 天），并经历了多次登陆与强度变化。
-            论文把 Freddy 的演变按阶段分解，研究 MJO 及 Kelvin、MRG、ER 等赤道波动在两个阶段中对其
-            <em>路径引导</em>与<em>强度维持</em>的作用，并量化波动的动力与热力贡献，以揭示其极端长生命史的主导机制。
-          </p>
-          <ul class="points">
-            <li>波动滤波与多尺度分解：从再分析资料中分离 MJO / Kelvin / MRG / ER 信号。</li>
-            <li>涡度拉伸与垂直积分水汽输送（VIMD）诊断，量化波动对流与涡旋的相互作用。</li>
-            <li>对比两阶段中波流相互作用差异，给出长生命史成因的阶段性解释。</li>
-          </ul>
-          <ul class="tags">
-            <li>热带气旋生成</li><li>赤道波动</li><li>多尺度动力分析</li><li>NCL · Python</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="masknpf">
-        <div class="when">2025.05 – 2025.12</div>
-        <div class="body">
-          <p class="title">利用机器学习预测大气新粒子生成
-            <span class="role">核心成员 · 中芬科考项目 · 指导 齐西萌</span></p>
-          <p class="desc">
-            大气新粒子生成（New Particle Formation, NPF）事件的识别长期依赖人工判读。
-            本项目基于 Mask R-CNN 对 NPF 事件做自动检测与分类，自动计算生长率与起止时间，
-            并统计不同类型事件在不同季节的分布特征。2025 年 8 月赴赫尔辛基参加科考与科研训练，
-            向 Markku Kulmala 院士汇报成果。
-          </p>
-          <ul class="points">
-            <li>复现并改进基于 Mask R-CNN 的 NPF 事件检测流程，输出 PSD 可视化与掩膜结果。</li>
-            <li>自动计算 3–10 nm、10–25 nm、3–25 nm 三个粒径段的生长率，并判定事件起止时间。</li>
-            <li>分析不同类型 NPF 事件的季节分布规律。</li>
-          </ul>
-          <ul class="tags">
-            <li>Mask R-CNN</li><li>实例分割</li><li>大气化学</li><li>PyTorch</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="renewable">
-        <div class="when">2023.11 – 2024.12</div>
-        <div class="body">
-          <p class="title">中国风能太阳能资源评估及其未来变化趋势
-            <span class="role">主持人 · 省级大学生创新训练项目 · 指导 邱博</span></p>
-          <p class="desc">
-            面向“双碳”目标下的新能源规划需求，融合地面观测、ERA5 再分析气象数据与 CMIP6 多模式模拟结果，
-            系统评估中国风速与地表短波辐射的时空变化特征，并预估风能、太阳能资源的空间分布与未来变化趋势。
-          </p>
-          <ul class="points">
-            <li>构建中国区域风速与地表短波辐射的评估数据集，分析其历史时空变化特征。</li>
-            <li>基于 CMIP6 多模式集合预估未来风能、太阳能资源的分布与趋势，并讨论预估的局限性与改进方向。</li>
-            <li>延伸议题：空气污染对光伏发电潜力的影响。</li>
-          </ul>
-          <ul class="tags">
-            <li>CMIP6</li><li>ERA5</li><li>风能 / 太阳能</li><li>气候预估</li><li>Python</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="air-pollution">
-        <div class="when">2025.09 – 2026.01</div>
-        <div class="body">
-          <p class="title">机器学习在空气污染预报中的应用
-            <span class="role">课程小组项目 · 选题与展示</span></p>
-          <p class="desc">
-            在“污染气象学”课程中围绕机器学习在空气污染预报中的应用做专题调研与选题设计，
-            梳理深度学习在区域大气化学、臭氧与颗粒物预报中的方法脉络与数据同化思路，
-            并组织小组分工与成果展示。
-          </p>
-          <ul class="tags">
-            <li>大气化学</li><li>深度学习</li><li>文献调研</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <h2 class="section" id="projects">工程与全栈项目</h2>
-    <div class="entries">
-
-      <div class="entry" id="workorder">
-        <div class="when">2026.06 – 2026.08</div>
-        <div class="body">
-          <p class="title">智能工单处置分析平台 <span class="role">南京知朴星科技有限公司 · 全栈工程师</span></p>
-          <p class="desc">
-            面向街道 12345 政务热线的工单数据治理与智能分析平台，覆盖工单导入治理、智能检索、多维分析、
-            风险预警四大模块；采用全开源技术栈以适配基层有限算力，解决历史工单检索不准、统计繁琐、
-            缺乏风险预警等痛点。
-          </p>
-          <ul class="points">
-            <li>基于 AgentScope 构建 ReAct 多智能体问答系统，注解式注册 30+ 工具，复杂多轮查询推理轮次由 8+ 降至 2–3。</li>
-            <li>设计多 Provider 模型接入层，统一 DeepSeek 云端 API 与本地 Ollama（Qwen 量化部署），支持密钥热更新与健康检查。</li>
-            <li>自研轻量 RAG 语义检索：结构化过滤缩候选集 → 余弦相似度 Top-K 召回，解决“答非所问、计数错误”。</li>
-            <li>性能优化：Fast-Path 意图识别并行预取、SSE 流式输出与心跳、Redis 多级缓存，token 消耗降低约 60%。</li>
-          </ul>
-          <ul class="tags">
-            <li>Spring Boot</li><li>Vue 3</li><li>AgentScope</li><li>DeepSeek</li><li>RAG</li><li>Redis</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="rag">
-        <div class="when">个人项目</div>
-        <div class="body">
-          <p class="title">RAG 知识库问答系统 <span class="role">全栈开发 · 已部署上线</span></p>
-          <p class="desc">
-            从零构建的企业级多租户 RAG 知识库问答平台，覆盖“文档解析 → 分块 → 向量化 → 检索 → 生成 → 溯源”
-            完整链路，支持多格式文档接入、6 种检索策略与多家大模型动态切换。
-          </p>
-          <ul class="points">
-            <li>基于 LangChain LCEL 构建检索-生成 Pipeline，内置标准 / 多路召回 / 问题分解 / 摘要 / 假设性问题 / 混合检索 6 种策略。</li>
-            <li>融合 BM25 关键词检索与 FAISS 向量检索，采用加权倒数排名融合（RRF）+ 重排序模型，兼顾召回与精度。</li>
-            <li>自研三层语义分块器（章节标题识别 + 段落合并 + 句子级回退），支持父子检索。</li>
-            <li>Docker Compose 编排 MySQL、Redis、Flask、Celery Worker、Vue 五服务一键部署。</li>
-          </ul>
-          <ul class="tags">
-            <li>Python · Flask</li><li>LangChain</li><li>FAISS · BM25</li><li>Celery</li><li>Docker</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="corpus">
-        <div class="when">2026.02 – 至今</div>
-        <div class="body">
-          <p class="title">“知道 Corpus” 微信小程序 <span class="role">开发中</span></p>
-          <p class="desc">
-            面向知识语料整理与检索的小程序，前端使用微信小程序原生框架，后端提供检索与内容管理接口，
-            并配套 Logo 与视觉方案设计。
-          </p>
-          <ul class="tags">
-            <li>微信小程序</li><li>WXML / WXSS</li><li>接口设计</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry" id="anniv">
-        <div class="when">2026.10</div>
-        <div class="body">
-          <p class="title">纪念日网站 <span class="role">个人全栈项目 · 零构建 · 已部署</span></p>
-          <p class="desc">
-            一个轻量的私人纪念日站点：原生 HTML/CSS/JS 前端，Node（Express + Multer）后端，
-            以 JSON 作为数据层，零构建、零原生依赖，可在老版本 Node 环境下稳定运行；
-            通过内网穿透对外提供服务，并配置开机自启与看门狗脚本。
-          </p>
-          <ul class="tags">
-            <li>原生前端</li><li>Node.js</li><li>JSON 数据层</li><li>Cloudflare Tunnel</li><li>部署运维</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <hr class="rule">
-    <p class="link-quiet">
-      相关代码与笔记见 <a href="https://github.com/CY18270852013">GitHub</a>；
-      学习路径见 <a href="csai.html">CS &amp; AI</a>。
-    </p>
-
+  <nav class="sidenav"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><a href="about.html"><span class="lang-zh">自我介绍</span><span class="lang-en">About</span></a><a href="research.html" aria-current="page"><span class="lang-zh">科研与项目</span><span class="lang-en">Research</span></a><a href="honors.html"><span class="lang-zh">荣誉与竞赛</span><span class="lang-en">Honors</span></a><a href="courses.html"><span class="lang-zh">课程体系</span><span class="lang-en">Courses</span></a><a href="csai.html"><span class="lang-zh">AI 与计算机</span><span class="lang-en">CS & AI</span></a><a href="leetcode.html"><span class="lang-zh">算法题解</span><span class="lang-en">Algorithms</span></a><a href="directory.html"><span class="lang-zh">目录</span><span class="lang-en">Directory</span></a><a href="archive.html"><span class="lang-zh">归档</span><span class="lang-en">Archive</span></a></nav>
+  <div class="side-foot">
+    <a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="mailto:3336076006@qq.com">Email</a>
+    <br><span class="lang-zh">南京 · 上海</span><span class="lang-en">Nanjing · Shanghai</span>
+  </div>
+</aside>
+<main class="main">
+  <div class="content">
+<nav class="crumb"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><span class="sep">/</span><span class="here"><span class="lang-zh">科研与项目</span><span class="lang-en">Research</span></span></nav>
+<h1><span class="lang-zh">科研与项目</span><span class="lang-en">Research & Projects</span></h1>
+<p class="lede"><span class="lang-zh">两条线索贯穿我的工作：一是台风——它如何移动、增强，会造成多少损失、多久恢复；二是方法——深度学习与生成模型能否在这些问题上给出可靠、可检验的结果。</span><span class="lang-en">Two threads run through my work: typhoons — how they move, intensify, and what losses and recovery they cause; and methods — whether deep learning and generative models can deliver reliable, testable answers.</span></p>
+<p><span class="lang-zh">以下按时间列出研究项目与工程作品，均附方法要点与产出。</span><span class="lang-en">Research projects and engineering work, with methods and outcomes.</span></p>
+<h2><span class="lang-zh">科研项目</span><span class="lang-en">Research</span></h2>
+<div class="entries"><div class="entry" id="led"><div class="when"><span class="lang-zh">2026.09 – 至今</span><span class="lang-en">2026.09 – present</span></div><div class="body"><p class="title"><span class="lang-zh">利用夜间灯光遥感数据与人工智能方法评估台风经济损失及灾后恢复</span><span class="lang-en">Assessing Typhoon Economic Losses and Post-Disaster Recovery with Nighttime Lights and AI</span> <span class="role"><span class="lang-zh">硕士学位研究 · 导师 张峰 教授</span><span class="lang-en">M.S. research · Advisor: Prof. Feng Zhang</span></span></p><p class="desc"><span class="lang-zh">台风造成的经济损失通常滞后数周才被统计，且县级尺度记录零散。夜间灯光是经济活动的高频代理变量：台风过境后灯光亮度的下降幅度与恢复速度，可直接反映损失规模与恢复能力。本课题以多源夜光影像为观测，结合台风路径与强度、人口与经济、土地利用等数据，建立“损失—恢复”的评估框架，并检验其在未见台风事件上的泛化能力。</span><span class="lang-en">Typhoon losses are usually reported weeks after landfall and are sparse at the county level. Nighttime lights provide a high-frequency proxy for economic activity: the magnitude of the brightness drop and the speed of recovery reflect loss and resilience. This project builds a loss–recovery framework from multi-source nighttime-light imagery combined with track, intensity, demographic, economic and land-use data.</span></p><ul class="plain"><li><span class="lang-zh">多源夜光影像预处理与一致性校正：NPP/VIIRS 月产品与珞伽一号影像，处理云污染、入射角与跨传感器定标。</span><span class="lang-en">Preprocessing and harmonisation of NPP/VIIRS monthly composites and Luojia-1 imagery, including cloud masking, viewing-angle effects and cross-sensor calibration.</span></li><li><span class="lang-zh">以区县为单元的灯光异常提取，构建经济损失回归与分级模型，比较线性模型、树模型与深度时序网络的适用性。</span><span class="lang-en">County-level light-anomaly extraction; regression and severity classification comparing linear, tree-based and deep sequence models.</span></li><li><span class="lang-zh">灾后恢复时序建模：估计恢复速度与恢复程度，分析强度、路径、经济水平与恢复差异的关系。</span><span class="lang-en">Post-disaster recovery modelling: recovery speed and completeness as functions of intensity, track, economic level and region.</span></li><li><span class="lang-zh">与官方灾损统计及 EM-DAT 记录交叉验证，评估模型在不同台风与区域上的稳健性。</span><span class="lang-en">Cross-validation against official loss statistics and EM-DAT records to test robustness across storms and regions.</span></li></ul><ul class="tags"><li><span class="tag"><span class="lang-zh">夜间灯光遥感</span><span class="lang-en">Nighttime lights</span></span></li><li><span class="tag"><span class="lang-zh">NPP/VIIRS</span><span class="lang-en">NPP/VIIRS</span></span></li><li><span class="tag"><span class="lang-zh">深度学习</span><span class="lang-en">Deep learning</span></span></li><li><span class="tag"><span class="lang-zh">灾害经济损失</span><span class="lang-en">Disaster loss</span></span></li><li><span class="tag"><span class="lang-zh">台风</span><span class="lang-en">Typhoons</span></span></li></ul></div></div><div class="entry" id="freddy"><div class="when">2023.12 – 2026.06</div><div class="body"><p class="title"><span class="lang-zh">热带气旋 “Freddy”（2023）生成过程中的热带波动作用分析</span><span class="lang-en">Equatorial Wave Forcing during the Genesis of Cyclone Freddy (2023)</span> <span class="role"><span class="lang-zh">本科毕业论文 · 主持 · 指导 刘岩 助理教授</span><span class="lang-en">B.Sc. thesis · Lead · Advisor: Dr. Yan Liu</span></span></p><p class="desc"><span class="lang-zh">Freddy 是南半球观测史上生命史最长的热带气旋之一（约 35 天），经历多次登陆与强度变化。论文按阶段分解其演变，研究 MJO 及 Kelvin、MRG、ER 等赤道波动对路径引导与强度维持的动力与热力贡献，解释其极端长生命史的主导机制。</span><span class="lang-en">Cyclone Freddy is among the longest-lived tropical cyclones on record in the Southern Hemisphere (about 35 days). The thesis decomposes its evolution by stage and quantifies the dynamic and thermodynamic contributions of MJO, Kelvin, MRG and ER waves to track steering and intensity maintenance.</span></p><ul class="plain"><li><span class="lang-zh">波动滤波与多尺度分解：从再分析资料中分离 MJO / Kelvin / MRG / ER 信号。</span><span class="lang-en">Wave filtering and multi-scale decomposition of MJO, Kelvin, MRG and ER signals from reanalysis data.</span></li><li><span class="lang-zh">涡度拉伸与垂直积分水汽输送（VIMD）诊断，量化波动对流与涡旋的相互作用。</span><span class="lang-en">Vortex stretching and vertically integrated moisture divergence diagnostics to quantify wave–vortex interaction.</span></li><li><span class="lang-zh">对比两个阶段中波流相互作用差异，给出长生命史成因的阶段性解释。</span><span class="lang-en">Stage-wise comparison of wave–flow interaction to explain the unusually long lifetime.</span></li></ul><ul class="tags"><li><span class="tag"><span class="lang-zh">热带气旋生成</span><span class="lang-en">Cyclogenesis</span></span></li><li><span class="tag"><span class="lang-zh">赤道波动</span><span class="lang-en">Equatorial waves</span></span></li><li><span class="tag"><span class="lang-zh">多尺度分析</span><span class="lang-en">Multi-scale analysis</span></span></li><li><span class="tag"><span class="lang-zh">NCL / Python</span><span class="lang-en">NCL / Python</span></span></li></ul></div></div><div class="entry" id="masknpf"><div class="when">2025.05 – 2025.12</div><div class="body"><p class="title"><span class="lang-zh">利用机器学习预测大气新粒子生成</span><span class="lang-en">Machine Learning for Atmospheric New Particle Formation</span> <span class="role"><span class="lang-zh">核心成员 · 中芬科考项目 · 指导 齐西萌 助理教授</span><span class="lang-en">Core member · China–Finland project · Advisor: Dr. Ximeng Qi</span></span></p><p class="desc"><span class="lang-zh">大气新粒子生成（NPF）事件的识别长期依赖人工判读。项目基于 Mask R-CNN 对 NPF 事件做自动检测与分类，自动计算生长率与起止时间，并统计不同类型事件在不同季节的分布。2025 年 8 月赴赫尔辛基参加科考与科研训练，向 Markku Kulmala 院士汇报成果。</span><span class="lang-en">NPF event identification has long relied on manual inspection. This project applies Mask R-CNN to detect and classify NPF events, estimate growth rates and timing automatically, and analyse seasonal distributions. Results were presented to Prof. Markku Kulmala in Helsinki in August 2025.</span></p><ul class="plain"><li><span class="lang-zh">复现并改进基于 Mask R-CNN 的 NPF 事件检测流程，输出粒径谱可视化与掩膜结果。</span><span class="lang-en">Reproduced and refined a Mask R-CNN pipeline for NPF detection with size-distribution visualisation and masks.</span></li><li><span class="lang-zh">自动计算 3–10 nm、10–25 nm、3–25 nm 三个粒径段的生长率，并判定事件起止时间。</span><span class="lang-en">Automatic growth-rate estimation for 3–10 nm, 10–25 nm and 3–25 nm ranges, with event start and end times.</span></li><li><span class="lang-zh">分析不同类型 NPF 事件的季节分布规律。</span><span class="lang-en">Seasonal distribution patterns across NPF event types.</span></li></ul><ul class="tags"><li><span class="tag"><span class="lang-zh">Mask R-CNN</span><span class="lang-en">Mask R-CNN</span></span></li><li><span class="tag"><span class="lang-zh">实例分割</span><span class="lang-en">Instance segmentation</span></span></li><li><span class="tag"><span class="lang-zh">大气化学</span><span class="lang-en">Atmospheric chemistry</span></span></li><li><span class="tag"><span class="lang-zh">PyTorch</span><span class="lang-en">PyTorch</span></span></li></ul></div></div><div class="entry" id="renewable"><div class="when">2023.11 – 2024.12</div><div class="body"><p class="title"><span class="lang-zh">中国风能太阳能资源评估及其未来变化趋势</span><span class="lang-en">Wind and Solar Resource Assessment and Future Trends over China</span> <span class="role"><span class="lang-zh">主持人 · 省级大学生创新训练项目 · 指导 邱博 副教授</span><span class="lang-en">Lead · Provincial undergraduate research project · Advisor: Dr. Bo Qiu</span></span></p><p class="desc"><span class="lang-zh">面向“双碳”目标下的新能源规划需求，融合地面观测、ERA5 再分析资料与 CMIP6 多模式输出，系统评估中国风速与地表短波辐射的时空变化特征，并预估风能、太阳能资源的空间分布与未来趋势。</span><span class="lang-en">Combining station observations, ERA5 reanalysis and CMIP6 simulations to assess wind speed and surface shortwave radiation over China, and to project future wind and solar resources.</span></p><ul class="plain"><li><span class="lang-zh">构建中国区域风速与地表短波辐射的评估数据集，分析历史时空变化特征。</span><span class="lang-en">Built an assessment dataset for wind speed and surface shortwave radiation over China.</span></li><li><span class="lang-zh">基于 CMIP6 多模式集合预估未来资源分布与趋势，并讨论预估的不确定性。</span><span class="lang-en">Projected future resource distribution from the CMIP6 multi-model ensemble and discussed uncertainties.</span></li></ul><ul class="tags"><li><span class="tag"><span class="lang-zh">CMIP6</span><span class="lang-en">CMIP6</span></span></li><li><span class="tag"><span class="lang-zh">ERA5</span><span class="lang-en">ERA5</span></span></li><li><span class="tag"><span class="lang-zh">风能 / 太阳能</span><span class="lang-en">Wind / solar</span></span></li><li><span class="tag"><span class="lang-zh">气候预估</span><span class="lang-en">Climate projection</span></span></li><li><span class="tag"><span class="lang-zh">Python</span><span class="lang-en">Python</span></span></li></ul></div></div></div>
+<h2><span class="lang-zh">工程作品</span><span class="lang-en">Engineering</span></h2>
+<div class="entries"><div class="entry" id="workorder"><div class="when">2026.06 – 2026.08</div><div class="body"><p class="title"><span class="lang-zh">智能工单处置分析平台</span><span class="lang-en">Intelligent Work-Order Analysis Platform</span> <span class="role"><span class="lang-zh">南京知朴星科技有限公司 · 全栈工程师</span><span class="lang-en">Nanjing Zhipuxing Technology · Full-stack engineer</span></span></p><p class="desc"><span class="lang-zh">面向街道 12345 政务热线的工单数据治理与智能分析平台，覆盖工单导入治理、智能检索、多维分析、风险预警四个模块。采用全开源技术栈适配基层有限算力，解决历史工单检索不准、统计繁琐、缺乏风险预警等问题。</span><span class="lang-en">A data governance and intelligent analysis platform for municipal 12345 hotline work orders, covering ingestion, retrieval, multi-dimensional analysis and risk alerts. Built entirely on open-source components to run on limited municipal hardware.</span></p><ul class="plain"><li><span class="lang-zh">基于 AgentScope 构建 ReAct 多智能体问答系统，注解式注册 30+ 工具，复杂多轮查询的推理轮次由 8+ 降至 2–3。</span><span class="lang-en">Built a ReAct multi-agent QA system on AgentScope with 30+ annotation-registered tools, cutting reasoning rounds from 8+ to 2–3.</span></li><li><span class="lang-zh">设计多 Provider 模型接入层，统一 DeepSeek 云端 API 与本地 Ollama（Qwen 量化部署），支持密钥热更新与健康检查。</span><span class="lang-en">A multi-provider model layer unifying the DeepSeek API and local Ollama (quantised Qwen), with hot key rotation and health checks.</span></li><li><span class="lang-zh">实现轻量语义检索：结构化过滤缩小候选集，再做余弦相似度 Top-K 召回，修正“答非所问”与计数错误。</span><span class="lang-en">Lightweight semantic retrieval: structured filtering followed by cosine-similarity top-K recall, fixing off-topic answers and count errors.</span></li><li><span class="lang-zh">性能优化：意图识别并行预取、SSE 流式输出与心跳、Redis 多级缓存，token 消耗降低约 60%。</span><span class="lang-en">Performance work: intent pre-fetching, SSE streaming with heartbeat and multi-level Redis caching, reducing token usage by about 60%.</span></li></ul><ul class="tags"><li><span class="tag"><span class="lang-zh">Spring Boot</span><span class="lang-en">Spring Boot</span></span></li><li><span class="tag"><span class="lang-zh">Vue 3</span><span class="lang-en">Vue 3</span></span></li><li><span class="tag"><span class="lang-zh">AgentScope</span><span class="lang-en">AgentScope</span></span></li><li><span class="tag"><span class="lang-zh">DeepSeek</span><span class="lang-en">DeepSeek</span></span></li><li><span class="tag"><span class="lang-zh">Redis</span><span class="lang-en">Redis</span></span></li></ul></div></div><div class="entry" id="corpus"><div class="when"><span class="lang-zh">2026.02 – 至今</span><span class="lang-en">2026.02 – present</span></div><div class="body"><p class="title"><span class="lang-zh">“知道 Corpus” 微信小程序</span><span class="lang-en">“Corpus” WeChat Mini Program</span> <span class="role"><span class="lang-zh">个人项目 · 开发中</span><span class="lang-en">Personal project · in progress</span></span></p><p class="desc"><span class="lang-zh">面向知识语料整理与检索的小程序：原生小程序前端负责浏览、检索与收藏，后端提供内容管理与检索接口，并配套完成视觉方案设计。</span><span class="lang-en">A mini program for organizing and retrieving knowledge corpora: a native front end for browsing, search and bookmarking, with content-management and retrieval APIs.</span></p><ul class="tags"><li><span class="tag"><span class="lang-zh">微信小程序</span><span class="lang-en">WeChat Mini Program</span></span></li><li><span class="tag"><span class="lang-zh">WXML / WXSS</span><span class="lang-en">WXML / WXSS</span></span></li><li><span class="tag"><span class="lang-zh">接口设计</span><span class="lang-en">API design</span></span></li></ul></div></div><div class="entry" id="scripts"><div class="when">2025</div><div class="body"><p class="title"><span class="lang-zh">大气科学 Python 工具链</span><span class="lang-en">Atmospheric Python Toolchain</span> <span class="role"><span class="lang-zh">个人项目 · 开源</span><span class="lang-en">Personal project · open source</span></span></p><p class="desc"><span class="lang-zh">研究中使用与整理的 155 个 Python / Jupyter 脚本，覆盖降水与对流分析、赤道波动诊断、台风路径与强度处理、风能太阳能评估、谱分析与相干计算。</span><span class="lang-en">155 Python and Jupyter scripts used in research: precipitation and convection analysis, equatorial-wave diagnostics, cyclone track and intensity processing, wind and solar assessment, spectral analysis.</span></p><p class="small-note"><a href="assets/files/csai/atmospheric-python-scripts.zip" download><span class="lang-zh">下载脚本包（zip）</span><span class="lang-en">Download the scripts (zip)</span></a></p><ul class="tags"><li><span class="tag"><span class="lang-zh">Python</span><span class="lang-en">Python</span></span></li><li><span class="tag"><span class="lang-zh">xarray</span><span class="lang-en">xarray</span></span></li><li><span class="tag"><span class="lang-zh">NCL</span><span class="lang-en">NCL</span></span></li><li><span class="tag"><span class="lang-zh">可视化</span><span class="lang-en">Visualisation</span></span></li></ul></div></div></div>
+<h2><span class="lang-zh">代码与数据</span><span class="lang-en">Code & Data</span></h2>
+<p><span class="lang-zh">课程知识体系文档与算法题解源码可在对应页面下载；代码仓库在 GitHub 维护。</span><span class="lang-en">Course notes and algorithm solutions are downloadable from their pages; code repositories are on GitHub.</span></p>
+    <footer class="foot">
+      <p>© 2026 <span class="lang-zh">陈勇 · 复旦大学大气与海洋科学系</span><span class="lang-en">Yong Chen · Fudan University</span></p>
+      <p><a href="mailto:3336076006@qq.com">Email</a><span class="sep">·</span><a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="https://github.com/CY18270852013/CY18270852013.github.io"><span class="lang-zh">本站源码</span><span class="lang-en">Source</span></a></p>
+    </footer>
   </div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>陈勇 · 复旦大学大气与海洋科学系</p>
-    <p>
-      <a href="mailto:3336076006@qq.com">3336076006@qq.com</a> ·
-      <a href="https://github.com/CY18270852013">github.com/CY18270852013</a> ·
-      <a href="https://CY18270852013.github.io/">CY18270852013.github.io</a>
-    </p>
+<aside class="rail">
+  <form class="search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="搜索…" data-ph-zh="搜索…" data-ph-en="Search…" aria-label="站内搜索">
+  </form>
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">最近更新</span><span class="lang-en">Recent</span></div>
+    <ul class="recent"><li><span class="rdate">2026.09</span><a href="research.html#led"><span class="lang-zh">夜间灯光遥感与台风经济损失评估</span><span class="lang-en">Nighttime lights & typhoon loss</span></a></li><li><span class="rdate">2026.08</span><a href="research.html#workorder"><span class="lang-zh">智能工单处置分析平台</span><span class="lang-en">Intelligent work-order platform</span></a></li><li><span class="rdate">2026.06</span><a href="research.html#freddy"><span class="lang-zh">热带气旋 Freddy 的波动作用</span><span class="lang-en">Wave forcing of Cyclone Freddy</span></a></li><li><span class="rdate">2026.02</span><a href="research.html#corpus"><span class="lang-zh">“知道 Corpus” 小程序</span><span class="lang-en">Corpus mini program</span></a></li><li><span class="rdate">2025.12</span><a href="research.html#masknpf"><span class="lang-zh">机器学习识别大气新粒子生成</span><span class="lang-en">NPF detection with Mask R-CNN</span></a></li></ul>
   </div>
-</footer>
-
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></div>
+    <p class="rail-text"><a href="mailto:3336076006@qq.com">3336076006@qq.com</a></p>
+    <p class="rail-text"><a href="https://github.com/CY18270852013">GitHub</a> · <a href="https://leetcode.cn/u/cy20031127/">LeetCode</a></p>
+  </div>
+</aside>
+</div>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

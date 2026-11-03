@@ -1,145 +1,70 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>算法题解 | 陈勇</title>
-<meta name="description" content="陈勇在 LeetCode 上完成的算法练习，按数组与字符串、链表、二叉树、图与搜索、数学与位运算、动态规划分类，附 C++ 源码。">
+<title>算法题解 | 陈勇 | 陈勇</title>
+<meta name="description" content="陈勇的 LeetCode 算法题解：40 道题的 C++ 源码，按数组、链表、二叉树、图、数学与动态规划分类。">
 <link rel="canonical" href="https://CY18270852013.github.io/leetcode.html">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-title-zh="算法题解 | 陈勇" data-title-en="Algorithms | Yong Chen">
+<div class="shell">
 
-<header class="site-header">
-  <div class="wrap wrap--wide header-inner">
-    <a class="brand" href="index.html">陈勇<span>Yong Chen</span></a>
-    <nav class="site-nav">
-      <a href="index.html">首页</a>
-      <a href="about.html">自我介绍</a>
-      <a href="research.html">科研与项目</a>
-      <a href="honors.html">竞赛与荣誉</a>
-      <a href="courses.html">课程体系</a>
-      <a href="csai.html">CS &amp; AI</a>
-      <a href="leetcode.html" aria-current="page">算法题解</a>
-      <a href="ideas.html">金点子</a>
-    </nav>
+<aside class="sidebar">
+  <a class="side-top" href="index.html">
+    <img class="avatar" src="assets/img/avatar.jpg" alt="陈勇">
+    <div class="side-id">
+      <div class="side-name"><span class="lang-zh">陈勇</span><span class="lang-en">Chen Yong</span></div>
+      <div class="side-role"><span class="lang-zh">复旦大学 · 大气与海洋科学系</span><span class="lang-en">Fudan University · Atmospheric and Oceanic Sciences</span></div>
+      <div class="side-mail">3336076006@qq.com</div>
+    </div>
+  </a>
+  <div class="side-tools">
+    <button class="lang-toggle" type="button" data-lang="zh" aria-pressed="true">中文</button>
+    <span>/</span>
+    <button class="lang-toggle" type="button" data-lang="en" aria-pressed="false">EN</button>
   </div>
-</header>
-
-<main>
-  <div class="wrap">
-
-    <p class="eyebrow">Algorithm Notes</p>
-    <h1 class="page-title">算法题解</h1>
-    <p class="page-lede">
-      数据结构与算法是我在计算机课程和保研准备中投入最多的一块。这里按主题整理我在
-      LeetCode 上刷过的题目与题解源码，题目序号可跳转至 LeetCode 对应页面。
-    </p>
-    <p class="link-quiet">
-      账号：<a href="https://leetcode.cn/u/cy20031127/">cy20031127</a>
-      （累计完成 150+ 题，下表为已整理题解源码的题目）。源码语言：C++。
-    </p>
-
-    <h2 class="section">数组与字符串</h2>
-    <table class="catalog">
-      <thead><tr><th>题号</th><th>题目</th><th>源码</th></tr></thead>
-      <tbody>
-        <tr><td class="name">26</td><td><a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-array/">删除有序数组中的重复项</a></td><td class="dl"><a href="assets/files/leetcode/leetcode26_%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9.cpp" download>C++</a></td></tr>
-        <tr><td class="name">27</td><td><a href="https://leetcode.cn/problems/remove-element/">移除元素</a></td><td class="dl"><a href="assets/files/leetcode/leetcode27_%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.cpp" download>C++</a> · <a href="assets/files/leetcode/leetcode27_2_%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.cpp" download>C++</a></td></tr>
-        <tr><td class="name">28</td><td><a href="https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/">找出字符串中第一个匹配项的下标</a></td><td class="dl"><a href="assets/files/leetcode/leetcode28_%E6%89%BE%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8C%B9%E9%85%8D%E9%A1%B9%E7%9A%84%E4%B8%8B%E6%A0%87.cpp" download>C++</a></td></tr>
-        <tr><td class="name">35</td><td><a href="https://leetcode.cn/problems/search-insert-position/">搜索插入位置</a></td><td class="dl"><a href="assets/files/leetcode/leetcode35_%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.cpp" download>C++</a></td></tr>
-        <tr><td class="name">58</td><td><a href="https://leetcode.cn/problems/length-of-last-word/">最后一个单词的长度</a></td><td class="dl"><a href="assets/files/leetcode/leetcode58_%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6.cpp" download>C++</a></td></tr>
-        <tr><td class="name">66</td><td><a href="https://leetcode.cn/problems/plus-one/">加一</a></td><td class="dl"><a href="assets/files/leetcode/leetcode66_%E5%8A%A0%E4%B8%80.cpp" download>C++</a></td></tr>
-        <tr><td class="name">67</td><td><a href="https://leetcode.cn/problems/add-binary/">二进制求和</a></td><td class="dl"><a href="assets/files/leetcode/leetcode67_%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C.cpp" download>C++</a></td></tr>
-        <tr><td class="name">88</td><td><a href="https://leetcode.cn/problems/merge-sorted-array/">合并两个有序数组</a></td><td class="dl"><a href="assets/files/leetcode/leetcode88_%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.cpp" download>C++</a></td></tr>
-        <tr><td class="name">118</td><td><a href="https://leetcode.cn/problems/pascals-triangle/">杨辉三角</a></td><td class="dl"><a href="assets/files/leetcode/leetcode118_%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.cpp" download>C++</a></td></tr>
-        <tr><td class="name">119</td><td><a href="https://leetcode.cn/problems/pascals-triangle-ii/">杨辉三角 II</a></td><td class="dl"><a href="assets/files/leetcode/leetcode119_%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%20II.cpp" download>C++</a></td></tr>
-        <tr><td class="name">121</td><td><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/">买卖股票的最佳时机</a></td><td class="dl"><a href="assets/files/leetcode/leetcode121_%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.cpp" download>C++</a></td></tr>
-        <tr><td class="name">125</td><td><a href="https://leetcode.cn/problems/valid-palindrome/">验证回文串</a></td><td class="dl"><a href="assets/files/leetcode/leetcode125_%E9%AA%8C%E8%AF%81%E5%9B%9E%E6%96%87%E4%B8%B2.cpp" download>C++</a></td></tr>
-        <tr><td class="name">168</td><td><a href="https://leetcode.cn/problems/excel-sheet-column-title/">Excel 表列名称</a></td><td class="dl"><a href="assets/files/leetcode/leetcode168_Excel%20%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0.cpp" download>C++</a></td></tr>
-        <tr><td class="name">169</td><td><a href="https://leetcode.cn/problems/majority-element/">多数元素</a></td><td class="dl"><a href="assets/files/leetcode/leetcode169_%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0.cpp" download>C++</a></td></tr>
-        <tr><td class="name">171</td><td><a href="https://leetcode.cn/problems/excel-sheet-column-number/">Excel 表列序号</a></td><td class="dl"><a href="assets/files/leetcode/leetcode171_Excel%20%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7.cpp" download>C++</a></td></tr>
-        <tr><td class="name">392</td><td><a href="https://leetcode.cn/problems/is-subsequence/">判断子序列</a></td><td class="dl"><a href="assets/files/leetcode/leetcode392_%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.cpp" download>C++</a></td></tr>
-        <tr><td class="name">409</td><td><a href="https://leetcode.cn/problems/longest-palindrome/">最长回文串</a></td><td class="dl"><a href="assets/files/leetcode/leetcode409_%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2.cpp" download>C++</a></td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="section">链表</h2>
-    <table class="catalog">
-      <thead><tr><th>题号</th><th>题目</th><th>源码</th></tr></thead>
-      <tbody>
-        <tr><td class="name">83</td><td><a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list/">删除排序链表中的重复元素</a></td><td class="dl"><a href="assets/files/leetcode/leetcode83_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0.cpp" download>C++</a></td></tr>
-        <tr><td class="name">141</td><td><a href="https://leetcode.cn/problems/linked-list-cycle/">环形链表</a></td><td class="dl"><a href="assets/files/leetcode/leetcode141_%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.cpp" download>C++</a></td></tr>
-        <tr><td class="name">160</td><td><a href="https://leetcode.cn/problems/intersection-of-two-linked-lists/">相交链表</a></td><td class="dl"><a href="assets/files/leetcode/leetcode160_%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.cpp" download>C++</a></td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="section">二叉树</h2>
-    <table class="catalog">
-      <thead><tr><th>题号</th><th>题目</th><th>源码</th></tr></thead>
-      <tbody>
-        <tr><td class="name">94</td><td><a href="https://leetcode.cn/problems/binary-tree-inorder-traversal/">二叉树的中序遍历</a></td><td class="dl"><a href="assets/files/leetcode/leetcode94_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.cpp" download>C++</a></td></tr>
-        <tr><td class="name">100</td><td><a href="https://leetcode.cn/problems/same-tree/">相同的树</a></td><td class="dl"><a href="assets/files/leetcode/leetcode100_%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.cpp" download>C++</a></td></tr>
-        <tr><td class="name">101</td><td><a href="https://leetcode.cn/problems/symmetric-tree/">对称二叉树</a></td><td class="dl"><a href="assets/files/leetcode/leetcode101_%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.cpp" download>C++</a> · <a href="assets/files/leetcode/leetcode101_2_%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.cpp" download>C++</a></td></tr>
-        <tr><td class="name">104</td><td><a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/">二叉树的最大深度</a></td><td class="dl"><a href="assets/files/leetcode/leetcode104_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6.cpp" download>C++</a></td></tr>
-        <tr><td class="name">108</td><td><a href="https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/">将有序数组转换为二叉搜索树</a></td><td class="dl"><a href="assets/files/leetcode/leetcode108_%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.cpp" download>C++</a></td></tr>
-        <tr><td class="name">110</td><td><a href="https://leetcode.cn/problems/balanced-binary-tree/">平衡二叉树</a></td><td class="dl"><a href="assets/files/leetcode/leetcode110_%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.cpp" download>C++</a></td></tr>
-        <tr><td class="name">111</td><td><a href="https://leetcode.cn/problems/minimum-depth-of-binary-tree/">二叉树的最小深度</a></td><td class="dl"><a href="assets/files/leetcode/leetcode111_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.cpp" download>C++</a></td></tr>
-        <tr><td class="name">112</td><td><a href="https://leetcode.cn/problems/path-sum/">路径总和</a></td><td class="dl"><a href="assets/files/leetcode/leetcode112_%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.cpp" download>C++</a></td></tr>
-        <tr><td class="name">144</td><td><a href="https://leetcode.cn/problems/binary-tree-preorder-traversal/">二叉树的前序遍历</a></td><td class="dl"><a href="assets/files/leetcode/leetcode144_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86.cpp" download>C++</a></td></tr>
-        <tr><td class="name">145</td><td><a href="https://leetcode.cn/problems/binary-tree-postorder-traversal/">二叉树的后序遍历</a></td><td class="dl"><a href="assets/files/leetcode/leetcode145_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86.cpp" download>C++</a></td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="section">图与搜索</h2>
-    <table class="catalog">
-      <thead><tr><th>题号</th><th>题目</th><th>源码</th></tr></thead>
-      <tbody>
-        <tr><td class="name">133</td><td><a href="https://leetcode.cn/problems/clone-graph/">克隆图</a></td><td class="dl"><a href="assets/files/leetcode/leetcode133_%E5%85%8B%E9%9A%86%E5%9B%BE.cpp" download>C++</a></td></tr>
-        <tr><td class="name">997</td><td><a href="https://leetcode.cn/problems/find-the-town-judge/">找到小镇的法官</a></td><td class="dl"><a href="assets/files/leetcode/leetcode997_%E6%89%BE%E5%88%B0%E5%B0%8F%E9%95%87%E7%9A%84%E6%B3%95%E5%AE%98.cpp" download>C++</a></td></tr>
-        <tr><td class="name">1791</td><td><a href="https://leetcode.cn/problems/find-center-of-star-graph/">找出星型图的中心节点</a></td><td class="dl"><a href="assets/files/leetcode/leetcode1791_%E6%89%BE%E5%87%BA%E6%98%9F%E5%9E%8B%E5%9B%BE%E7%9A%84%E4%B8%AD%E5%BF%83%E8%8A%82%E7%82%B9.cpp" download>C++</a></td></tr>
-        <tr><td class="name">1971</td><td><a href="https://leetcode.cn/problems/find-if-path-exists-in-graph/">寻找图中是否存在路径</a></td><td class="dl"><a href="assets/files/leetcode/leetcode1971_%E5%AF%BB%E6%89%BE%E5%9B%BE%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E8%B7%AF%E5%BE%84.cpp" download>C++</a></td></tr>
-        <tr><td class="name">LCP 07</td><td><a href="https://leetcode.cn/problems/chuan-di-xin-xi/">传递信息</a></td><td class="dl"><a href="assets/files/leetcode/leetcodeLCP07_%E4%BC%A0%E9%80%92%E4%BF%A1%E6%81%AF.cpp" download>C++</a></td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="section">数学与位运算</h2>
-    <table class="catalog">
-      <thead><tr><th>题号</th><th>题目</th><th>源码</th></tr></thead>
-      <tbody>
-        <tr><td class="name">136</td><td><a href="https://leetcode.cn/problems/single-number/">只出现一次的数字</a></td><td class="dl"><a href="assets/files/leetcode/leetcode136_%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97.cpp" download>C++</a></td></tr>
-        <tr><td class="name">190</td><td><a href="https://leetcode.cn/problems/reverse-bits/">颠倒二进制位</a></td><td class="dl"><a href="assets/files/leetcode/leetcode190_%E9%A2%A0%E5%80%92%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%BD%8D.cpp" download>C++</a></td></tr>
-        <tr><td class="name">338</td><td><a href="https://leetcode.cn/problems/counting-bits/">比特位计数</a></td><td class="dl"><a href="assets/files/leetcode/leetcode338_%E6%AF%94%E7%89%B9%E4%BD%8D%E8%AE%A1%E6%95%B0.cpp" download>C++</a></td></tr>
-        <tr><td class="name">69</td><td><a href="https://leetcode.cn/problems/sqrtx/">x 的平方根</a></td><td class="dl"><a href="assets/files/leetcode/leetcode69_x%20%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9%20.cpp" download>C++</a></td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="section">动态规划</h2>
-    <table class="catalog">
-      <thead><tr><th>题号</th><th>题目</th><th>源码</th></tr></thead>
-      <tbody>
-        <tr><td class="name">70</td><td><a href="https://leetcode.cn/problems/climbing-stairs/">爬楼梯</a></td><td class="dl"><a href="assets/files/leetcode/leetcode70_%E7%88%AC%E6%A5%BC%E6%A2%AF.cpp" download>C++</a> · <a href="assets/files/leetcode/leetcode70_2_%E7%88%AC%E6%A5%BC%E6%A2%AF.cpp" download>C++</a></td></tr>
-      </tbody>
-    </table>
-
-    <hr class="rule">
-    <p class="link-quiet">
-      更多练习记录见 LeetCode 个人主页；相关课程整理见 <a href="courses.html">课程知识体系</a>。
-    </p>
-
+  <nav class="sidenav"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><a href="about.html"><span class="lang-zh">自我介绍</span><span class="lang-en">About</span></a><a href="research.html"><span class="lang-zh">科研与项目</span><span class="lang-en">Research</span></a><a href="honors.html"><span class="lang-zh">荣誉与竞赛</span><span class="lang-en">Honors</span></a><a href="courses.html"><span class="lang-zh">课程体系</span><span class="lang-en">Courses</span></a><a href="csai.html"><span class="lang-zh">AI 与计算机</span><span class="lang-en">CS & AI</span></a><a href="leetcode.html" aria-current="page"><span class="lang-zh">算法题解</span><span class="lang-en">Algorithms</span></a><a href="directory.html"><span class="lang-zh">目录</span><span class="lang-en">Directory</span></a><a href="archive.html"><span class="lang-zh">归档</span><span class="lang-en">Archive</span></a></nav>
+  <div class="side-foot">
+    <a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="mailto:3336076006@qq.com">Email</a>
+    <br><span class="lang-zh">南京 · 上海</span><span class="lang-en">Nanjing · Shanghai</span>
+  </div>
+</aside>
+<main class="main">
+  <div class="content">
+<nav class="crumb"><a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a><span class="sep">/</span><span class="here"><span class="lang-zh">算法题解</span><span class="lang-en">Algorithms</span></span></nav>
+<h1><span class="lang-zh">算法题解</span><span class="lang-en">Algorithm Notes</span></h1>
+<p class="lede"><span class="lang-zh">算法与数据结构是我投入最集中的一块。这里按主题整理 40 道已整理源码的 LeetCode 题目，题目链接指向 LeetCode 原题，源码可直接下载。</span><span class="lang-en">Algorithms and data structures are where I have invested most. This page lists 40 LeetCode problems with C++ source code, grouped by topic.</span></p>
+<p class="page-meta"><span class="lang-zh">账号 cy20031127</span><span class="lang-en">Account: cy20031127</span><span class="sep">·</span><span class="lang-zh">累计完成 150+ 题</span><span class="lang-en">150+ problems solved</span><span class="sep">·</span><span class="lang-zh">下表 40 题附源码</span><span class="lang-en">40 with source code</span></p>
+<div class="filters" id="lcFilters"><button class="chip" type="button" data-topic="all" aria-pressed="true"><span class="lang-zh">全部</span><span class="lang-en">All</span></button><button class="chip" type="button" data-topic="数组与字符串" aria-pressed="false"><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span> <span class="count">17</span></button><button class="chip" type="button" data-topic="链表" aria-pressed="false"><span class="lang-zh">链表</span><span class="lang-en">Linked List</span> <span class="count">3</span></button><button class="chip" type="button" data-topic="二叉树" aria-pressed="false"><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span> <span class="count">10</span></button><button class="chip" type="button" data-topic="图与搜索" aria-pressed="false"><span class="lang-zh">图与搜索</span><span class="lang-en">Graphs & Search</span> <span class="count">5</span></button><button class="chip" type="button" data-topic="数学与位运算" aria-pressed="false"><span class="lang-zh">数学与位运算</span><span class="lang-en">Math & Bit Manipulation</span> <span class="count">4</span></button><button class="chip" type="button" data-topic="动态规划" aria-pressed="false"><span class="lang-zh">动态规划</span><span class="lang-en">Dynamic Programming</span> <span class="count">1</span></button></div>
+<div class="tablewrap"><table class="catalog" id="lcTable">
+<thead><tr><th><span class="lang-zh">题号</span><span class="lang-en">No.</span></th><th><span class="lang-zh">题目</span><span class="lang-en">Problem</span></th><th><span class="lang-zh">分类</span><span class="lang-en">Topic</span></th><th class="dl"><span class="lang-zh">源码</span><span class="lang-en">Source</span></th></tr></thead>
+<tbody><tr id="lc-26" data-topic="数组与字符串"><td class="name">26</td><td><a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-array/"><span class="lang-zh">删除有序数组中的重复项</span><span class="lang-en">Remove Duplicates from Sorted Array</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode26_%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9.cpp" download>C++</a></td></tr><tr id="lc-27" data-topic="数组与字符串"><td class="name">27</td><td><a href="https://leetcode.cn/problems/remove-element/"><span class="lang-zh">移除元素</span><span class="lang-en">Remove Element</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode27_%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.cpp" download>C++</a> · <a href="assets/files/leetcode/leetcode27_2_%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.cpp" download>C++</a></td></tr><tr id="lc-28" data-topic="数组与字符串"><td class="name">28</td><td><a href="https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/"><span class="lang-zh">找出字符串中第一个匹配项的下标</span><span class="lang-en">Find the Index of the First Occurrence in a String</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode28_%E6%89%BE%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8C%B9%E9%85%8D%E9%A1%B9%E7%9A%84%E4%B8%8B%E6%A0%87.cpp" download>C++</a></td></tr><tr id="lc-35" data-topic="数组与字符串"><td class="name">35</td><td><a href="https://leetcode.cn/problems/search-insert-position/"><span class="lang-zh">搜索插入位置</span><span class="lang-en">Search Insert Position</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode35_%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.cpp" download>C++</a></td></tr><tr id="lc-58" data-topic="数组与字符串"><td class="name">58</td><td><a href="https://leetcode.cn/problems/length-of-last-word/"><span class="lang-zh">最后一个单词的长度</span><span class="lang-en">Length of Last Word</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode58_%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6.cpp" download>C++</a></td></tr><tr id="lc-66" data-topic="数组与字符串"><td class="name">66</td><td><a href="https://leetcode.cn/problems/plus-one/"><span class="lang-zh">加一</span><span class="lang-en">Plus One</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode66_%E5%8A%A0%E4%B8%80.cpp" download>C++</a></td></tr><tr id="lc-67" data-topic="数组与字符串"><td class="name">67</td><td><a href="https://leetcode.cn/problems/add-binary/"><span class="lang-zh">二进制求和</span><span class="lang-en">Add Binary</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode67_%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C.cpp" download>C++</a></td></tr><tr id="lc-88" data-topic="数组与字符串"><td class="name">88</td><td><a href="https://leetcode.cn/problems/merge-sorted-array/"><span class="lang-zh">合并两个有序数组</span><span class="lang-en">Merge Sorted Array</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode88_%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.cpp" download>C++</a></td></tr><tr id="lc-118" data-topic="数组与字符串"><td class="name">118</td><td><a href="https://leetcode.cn/problems/pascals-triangle/"><span class="lang-zh">杨辉三角</span><span class="lang-en">Pascals Triangle</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode118_%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.cpp" download>C++</a></td></tr><tr id="lc-119" data-topic="数组与字符串"><td class="name">119</td><td><a href="https://leetcode.cn/problems/pascals-triangle-ii/"><span class="lang-zh">杨辉三角 II</span><span class="lang-en">Pascals Triangle Ii</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode119_%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%20II.cpp" download>C++</a></td></tr><tr id="lc-121" data-topic="数组与字符串"><td class="name">121</td><td><a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/"><span class="lang-zh">买卖股票的最佳时机</span><span class="lang-en">Best Time to Buy and Sell Stock</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode121_%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.cpp" download>C++</a></td></tr><tr id="lc-125" data-topic="数组与字符串"><td class="name">125</td><td><a href="https://leetcode.cn/problems/valid-palindrome/"><span class="lang-zh">验证回文串</span><span class="lang-en">Valid Palindrome</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode125_%E9%AA%8C%E8%AF%81%E5%9B%9E%E6%96%87%E4%B8%B2.cpp" download>C++</a></td></tr><tr id="lc-168" data-topic="数组与字符串"><td class="name">168</td><td><a href="https://leetcode.cn/problems/excel-sheet-column-title/"><span class="lang-zh">Excel 表列名称</span><span class="lang-en">Excel Sheet Column Title</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode168_Excel%20%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0.cpp" download>C++</a></td></tr><tr id="lc-169" data-topic="数组与字符串"><td class="name">169</td><td><a href="https://leetcode.cn/problems/majority-element/"><span class="lang-zh">多数元素</span><span class="lang-en">Majority Element</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode169_%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0.cpp" download>C++</a></td></tr><tr id="lc-171" data-topic="数组与字符串"><td class="name">171</td><td><a href="https://leetcode.cn/problems/excel-sheet-column-number/"><span class="lang-zh">Excel 表列序号</span><span class="lang-en">Excel Sheet Column Number</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode171_Excel%20%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7.cpp" download>C++</a></td></tr><tr id="lc-392" data-topic="数组与字符串"><td class="name">392</td><td><a href="https://leetcode.cn/problems/is-subsequence/"><span class="lang-zh">判断子序列</span><span class="lang-en">Is Subsequence</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode392_%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.cpp" download>C++</a></td></tr><tr id="lc-409" data-topic="数组与字符串"><td class="name">409</td><td><a href="https://leetcode.cn/problems/longest-palindrome/"><span class="lang-zh">最长回文串</span><span class="lang-en">Longest Palindrome</span></a></td><td><span class="lang-zh">数组与字符串</span><span class="lang-en">Arrays & Strings</span></td><td class="dl"><a href="assets/files/leetcode/leetcode409_%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2.cpp" download>C++</a></td></tr><tr id="lc-83" data-topic="链表"><td class="name">83</td><td><a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list/"><span class="lang-zh">删除排序链表中的重复元素</span><span class="lang-en">Remove Duplicates from Sorted List</span></a></td><td><span class="lang-zh">链表</span><span class="lang-en">Linked List</span></td><td class="dl"><a href="assets/files/leetcode/leetcode83_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0.cpp" download>C++</a></td></tr><tr id="lc-141" data-topic="链表"><td class="name">141</td><td><a href="https://leetcode.cn/problems/linked-list-cycle/"><span class="lang-zh">环形链表</span><span class="lang-en">Linked List Cycle</span></a></td><td><span class="lang-zh">链表</span><span class="lang-en">Linked List</span></td><td class="dl"><a href="assets/files/leetcode/leetcode141_%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.cpp" download>C++</a></td></tr><tr id="lc-160" data-topic="链表"><td class="name">160</td><td><a href="https://leetcode.cn/problems/intersection-of-two-linked-lists/"><span class="lang-zh">相交链表</span><span class="lang-en">Intersection of Two Linked Lists</span></a></td><td><span class="lang-zh">链表</span><span class="lang-en">Linked List</span></td><td class="dl"><a href="assets/files/leetcode/leetcode160_%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.cpp" download>C++</a></td></tr><tr id="lc-94" data-topic="二叉树"><td class="name">94</td><td><a href="https://leetcode.cn/problems/binary-tree-inorder-traversal/"><span class="lang-zh">二叉树的中序遍历</span><span class="lang-en">Binary Tree Inorder Traversal</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode94_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.cpp" download>C++</a></td></tr><tr id="lc-100" data-topic="二叉树"><td class="name">100</td><td><a href="https://leetcode.cn/problems/same-tree/"><span class="lang-zh">相同的树</span><span class="lang-en">Same Tree</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode100_%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.cpp" download>C++</a></td></tr><tr id="lc-101" data-topic="二叉树"><td class="name">101</td><td><a href="https://leetcode.cn/problems/symmetric-tree/"><span class="lang-zh">对称二叉树</span><span class="lang-en">Symmetric Tree</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode101_%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.cpp" download>C++</a> · <a href="assets/files/leetcode/leetcode101_2_%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.cpp" download>C++</a></td></tr><tr id="lc-104" data-topic="二叉树"><td class="name">104</td><td><a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/"><span class="lang-zh">二叉树的最大深度</span><span class="lang-en">Maximum Depth of Binary Tree</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode104_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6.cpp" download>C++</a></td></tr><tr id="lc-108" data-topic="二叉树"><td class="name">108</td><td><a href="https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/"><span class="lang-zh">将有序数组转换为二叉搜索树</span><span class="lang-en">Convert Sorted Array to Binary Search Tree</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode108_%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.cpp" download>C++</a></td></tr><tr id="lc-110" data-topic="二叉树"><td class="name">110</td><td><a href="https://leetcode.cn/problems/balanced-binary-tree/"><span class="lang-zh">平衡二叉树</span><span class="lang-en">Balanced Binary Tree</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode110_%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.cpp" download>C++</a></td></tr><tr id="lc-111" data-topic="二叉树"><td class="name">111</td><td><a href="https://leetcode.cn/problems/minimum-depth-of-binary-tree/"><span class="lang-zh">二叉树的最小深度</span><span class="lang-en">Minimum Depth of Binary Tree</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode111_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.cpp" download>C++</a></td></tr><tr id="lc-112" data-topic="二叉树"><td class="name">112</td><td><a href="https://leetcode.cn/problems/path-sum/"><span class="lang-zh">路径总和</span><span class="lang-en">Path Sum</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode112_%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.cpp" download>C++</a></td></tr><tr id="lc-144" data-topic="二叉树"><td class="name">144</td><td><a href="https://leetcode.cn/problems/binary-tree-preorder-traversal/"><span class="lang-zh">二叉树的前序遍历</span><span class="lang-en">Binary Tree Preorder Traversal</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode144_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86.cpp" download>C++</a></td></tr><tr id="lc-145" data-topic="二叉树"><td class="name">145</td><td><a href="https://leetcode.cn/problems/binary-tree-postorder-traversal/"><span class="lang-zh">二叉树的后序遍历</span><span class="lang-en">Binary Tree Postorder Traversal</span></a></td><td><span class="lang-zh">二叉树</span><span class="lang-en">Binary Tree</span></td><td class="dl"><a href="assets/files/leetcode/leetcode145_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86.cpp" download>C++</a></td></tr><tr id="lc-133" data-topic="图与搜索"><td class="name">133</td><td><a href="https://leetcode.cn/problems/clone-graph/"><span class="lang-zh">克隆图</span><span class="lang-en">Clone Graph</span></a></td><td><span class="lang-zh">图与搜索</span><span class="lang-en">Graphs & Search</span></td><td class="dl"><a href="assets/files/leetcode/leetcode133_%E5%85%8B%E9%9A%86%E5%9B%BE.cpp" download>C++</a></td></tr><tr id="lc-997" data-topic="图与搜索"><td class="name">997</td><td><a href="https://leetcode.cn/problems/find-the-town-judge/"><span class="lang-zh">找到小镇的法官</span><span class="lang-en">Find the Town Judge</span></a></td><td><span class="lang-zh">图与搜索</span><span class="lang-en">Graphs & Search</span></td><td class="dl"><a href="assets/files/leetcode/leetcode997_%E6%89%BE%E5%88%B0%E5%B0%8F%E9%95%87%E7%9A%84%E6%B3%95%E5%AE%98.cpp" download>C++</a></td></tr><tr id="lc-1791" data-topic="图与搜索"><td class="name">1791</td><td><a href="https://leetcode.cn/problems/find-center-of-star-graph/"><span class="lang-zh">找出星型图的中心节点</span><span class="lang-en">Find Center of Star Graph</span></a></td><td><span class="lang-zh">图与搜索</span><span class="lang-en">Graphs & Search</span></td><td class="dl"><a href="assets/files/leetcode/leetcode1791_%E6%89%BE%E5%87%BA%E6%98%9F%E5%9E%8B%E5%9B%BE%E7%9A%84%E4%B8%AD%E5%BF%83%E8%8A%82%E7%82%B9.cpp" download>C++</a></td></tr><tr id="lc-1971" data-topic="图与搜索"><td class="name">1971</td><td><a href="https://leetcode.cn/problems/find-if-path-exists-in-graph/"><span class="lang-zh">寻找图中是否存在路径</span><span class="lang-en">Find If Path Exists in Graph</span></a></td><td><span class="lang-zh">图与搜索</span><span class="lang-en">Graphs & Search</span></td><td class="dl"><a href="assets/files/leetcode/leetcode1971_%E5%AF%BB%E6%89%BE%E5%9B%BE%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E8%B7%AF%E5%BE%84.cpp" download>C++</a></td></tr><tr id="lc-LCP07" data-topic="图与搜索"><td class="name">LCP 07</td><td><a href="https://leetcode.cn/problems/chuan-di-xin-xi/"><span class="lang-zh">传递信息</span><span class="lang-en">Chuan Di Xin Xi</span></a></td><td><span class="lang-zh">图与搜索</span><span class="lang-en">Graphs & Search</span></td><td class="dl"><a href="assets/files/leetcode/leetcodeLCP07_%E4%BC%A0%E9%80%92%E4%BF%A1%E6%81%AF.cpp" download>C++</a></td></tr><tr id="lc-136" data-topic="数学与位运算"><td class="name">136</td><td><a href="https://leetcode.cn/problems/single-number/"><span class="lang-zh">只出现一次的数字</span><span class="lang-en">Single Number</span></a></td><td><span class="lang-zh">数学与位运算</span><span class="lang-en">Math & Bit Manipulation</span></td><td class="dl"><a href="assets/files/leetcode/leetcode136_%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97.cpp" download>C++</a></td></tr><tr id="lc-190" data-topic="数学与位运算"><td class="name">190</td><td><a href="https://leetcode.cn/problems/reverse-bits/"><span class="lang-zh">颠倒二进制位</span><span class="lang-en">Reverse Bits</span></a></td><td><span class="lang-zh">数学与位运算</span><span class="lang-en">Math & Bit Manipulation</span></td><td class="dl"><a href="assets/files/leetcode/leetcode190_%E9%A2%A0%E5%80%92%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%BD%8D.cpp" download>C++</a></td></tr><tr id="lc-338" data-topic="数学与位运算"><td class="name">338</td><td><a href="https://leetcode.cn/problems/counting-bits/"><span class="lang-zh">比特位计数</span><span class="lang-en">Counting Bits</span></a></td><td><span class="lang-zh">数学与位运算</span><span class="lang-en">Math & Bit Manipulation</span></td><td class="dl"><a href="assets/files/leetcode/leetcode338_%E6%AF%94%E7%89%B9%E4%BD%8D%E8%AE%A1%E6%95%B0.cpp" download>C++</a></td></tr><tr id="lc-69" data-topic="数学与位运算"><td class="name">69</td><td><a href="https://leetcode.cn/problems/sqrtx/"><span class="lang-zh">x 的平方根</span><span class="lang-en">Sqrtx</span></a></td><td><span class="lang-zh">数学与位运算</span><span class="lang-en">Math & Bit Manipulation</span></td><td class="dl"><a href="assets/files/leetcode/leetcode69_x%20%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9%20.cpp" download>C++</a></td></tr><tr id="lc-70" data-topic="动态规划"><td class="name">70</td><td><a href="https://leetcode.cn/problems/climbing-stairs/"><span class="lang-zh">爬楼梯</span><span class="lang-en">Climbing Stairs</span></a></td><td><span class="lang-zh">动态规划</span><span class="lang-en">Dynamic Programming</span></td><td class="dl"><a href="assets/files/leetcode/leetcode70_%E7%88%AC%E6%A5%BC%E6%A2%AF.cpp" download>C++</a> · <a href="assets/files/leetcode/leetcode70_2_%E7%88%AC%E6%A5%BC%E6%A2%AF.cpp" download>C++</a></td></tr></tbody></table></div>
+<div class="pager" id="lcPager"></div>
+<p class="note" style="margin-top:20px"><span class="lang-zh">题解均为个人实现；同一题存在多份实现时分别列出。</span><span class="lang-en">All solutions are my own implementations; multiple approaches are listed separately.</span></p>
+    <footer class="foot">
+      <p>© 2026 <span class="lang-zh">陈勇 · 复旦大学大气与海洋科学系</span><span class="lang-en">Yong Chen · Fudan University</span></p>
+      <p><a href="mailto:3336076006@qq.com">Email</a><span class="sep">·</span><a href="https://github.com/CY18270852013">GitHub</a><span class="sep">·</span><a href="https://leetcode.cn/u/cy20031127/">LeetCode</a><span class="sep">·</span><a href="https://github.com/CY18270852013/CY18270852013.github.io"><span class="lang-zh">本站源码</span><span class="lang-en">Source</span></a></p>
+    </footer>
   </div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>陈勇 · 复旦大学大气与海洋科学系</p>
-    <p>
-      <a href="mailto:3336076006@qq.com">3336076006@qq.com</a> ·
-      <a href="https://github.com/CY18270852013">github.com/CY18270852013</a> ·
-      <a href="https://CY18270852013.github.io/">CY18270852013.github.io</a>
-    </p>
+<aside class="rail">
+  <form class="search" action="search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="搜索…" data-ph-zh="搜索…" data-ph-en="Search…" aria-label="站内搜索">
+  </form>
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">最近更新</span><span class="lang-en">Recent</span></div>
+    <ul class="recent"><li><span class="rdate">2026.09</span><a href="research.html#led"><span class="lang-zh">夜间灯光遥感与台风经济损失评估</span><span class="lang-en">Nighttime lights & typhoon loss</span></a></li><li><span class="rdate">2026.08</span><a href="research.html#workorder"><span class="lang-zh">智能工单处置分析平台</span><span class="lang-en">Intelligent work-order platform</span></a></li><li><span class="rdate">2026.06</span><a href="research.html#freddy"><span class="lang-zh">热带气旋 Freddy 的波动作用</span><span class="lang-en">Wave forcing of Cyclone Freddy</span></a></li><li><span class="rdate">2026.02</span><a href="research.html#corpus"><span class="lang-zh">“知道 Corpus” 小程序</span><span class="lang-en">Corpus mini program</span></a></li><li><span class="rdate">2025.12</span><a href="research.html#masknpf"><span class="lang-zh">机器学习识别大气新粒子生成</span><span class="lang-en">NPF detection with Mask R-CNN</span></a></li></ul>
   </div>
-</footer>
-
+  <div class="rail-block">
+    <div class="rail-title"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></div>
+    <p class="rail-text"><a href="mailto:3336076006@qq.com">3336076006@qq.com</a></p>
+    <p class="rail-text"><a href="https://github.com/CY18270852013">GitHub</a> · <a href="https://leetcode.cn/u/cy20031127/">LeetCode</a></p>
+  </div>
+</aside>
+</div>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
